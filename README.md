@@ -65,8 +65,10 @@
 
 ##### Architectural Characteristics
   1. Testability
-  2. Availability
+  2. Availability 
+          The system has to be highly available as most of the system depent on this service      
   3. Workflow
+          As the service creates assigment it has to run the workflows according to the needs of the candidate and non-profit organizations  
 
 
 ## Architectural Style
