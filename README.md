@@ -20,15 +20,13 @@
 
 ### Quantum - Responsibilities and Architectural Characteristics
 
-#### NP(Non-Profit) - Service
+#### 1. NP(Non-Profit) - Service
 
 ##### Responsibilities
   1. Register Non-Profit organization to the platform
   2. Profile Creation/Completion of the Non-Profit organization
   3. Non-Profit program management
   4. Managing partnership with other Non-Profit organization
-  5. Non-Profit assignment creation
-  6. Platform Role based training is assigned to new Non-Profit
 
 ##### Architectural Characteristics
   1. Scalability 
@@ -37,17 +35,17 @@
         The system has to be highly available so that the onboarding process is smooth
   3. Testability
 
-#### Candidate - Service
+#### 2. Candidate - Service
 
 ##### Responsibilities
   1. Register Candidate to the platform
   2. Profile Creation/Completion of the Candidate
   3. Uploading the road map of the candidate
-  4. Assigment creation for the candidate
-  5. Tracking candidate progress
-  6. Invite to the community meetings (Should this be handle by eventing service)
-  7. Program enrollment of the candidate 
-  8. Taking feedback from the candidate.
+  4. Tracking candidate progress
+  5. Program enrollment of the candidate 
+  6. Taking feedback from the candidate.
+  7. Take feeback on the candidate
+  8. Pull data from linkedIn
 
 ##### Architectural Characteristics
   1. Interoperability  
@@ -56,17 +54,19 @@
         With increase in the number of candidate ,the over-all performance of system should be consistance
   3. Testability  
 
-#### Admin Services
+#### 3. Assignment Services
 
 ##### Responsibilities
-  1. New Non-Profit is invited to monthly community meetings
-  2. Community leader assigment to the Non-profit organization
-  3. Role based training is assigned to new Non-Profit
-  4. Assignment of the mentor to the candidate
-  5. Assigment creation for the candidate
+  1. Role based training is assigned to new Non-Profit
+  2. Create assigment for the Non-profit organization
+  3. Create assigment for the candidate
+  4. Assigning mentor to the candidate 
+  5. Assigning community leader to the Non-profit organization
 
 ##### Architectural Characteristics
   1. Testability
+  2. Availability
+  3. Workflow
 
 
 ## Architectural Style
