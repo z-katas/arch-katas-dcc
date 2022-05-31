@@ -32,7 +32,7 @@
   1. Scalability 
         As the non-profit organization increses in number, the over-all performance of system should be consistance
   2. Availability  
-        The system has to be highly available so that the onboarding process is smooth
+        The system has to be highly available with no to low downtime
   3. Testability
 
 #### 2. Candidate - Service
