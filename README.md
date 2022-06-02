@@ -60,6 +60,7 @@ Followed a mixture of event storming + actor-action approach to identify aggrega
 * [Auth Service](./architectural-quanta/auth-service.md)
 * [Notification Service](./architectural-quanta/notification-service.md)
 * [Document Service](./architectural-quanta/document-service.md)
+* [Reports Service](./architectural-quanta/reports-service.md)
 
 <a name="quanta"></a>
 ### Quanta
@@ -67,7 +68,8 @@ Followed a mixture of event storming + actor-action approach to identify aggrega
 * [Recommendations](./architectural-quanta/auth-service.md)
 * [Integrations](./architectural-quanta/notification-service.md)
 * [Chat](./architectural-quanta/document-service.md)
-* [Support](./architectural-quanta/document-service.md)
+* [Support](./architectural-quanta/support-service.md)
+* [Meetings](./architectural-quanta/meetings-service.md)
 
 
 
