@@ -5,12 +5,12 @@ Identity Provider
 proposed 
 
 ## Context
-Identity and access control is a critical piece of the spotlight app since it will be part of every usecase for the user, However it is complicated to build and manage an identity system.   
+Identity and access control is a critical piece of the spotlight app since it will be part of every usecase for the user, However building a robust identity management system comes with its own challenges around security,compliance, management and monitoring.
 
 ### Alternatives
-* Building an identity service by our own
+* Building an identity service in-house.
 * Using an open source self hosted identity platforms like Keycloak, Apache LDAP
-* Using a fully managed 3rd party identity platform like Auth0, Okta
+* Using a fully managed 3rd party identity platform like Auth0, Okta.
 
 
 
@@ -29,7 +29,7 @@ Identity and access control is a critical piece of the spotlight app since it wi
 
 ## Decision
 **Leverage 3rd party fully managed identity solutions**.
-Building or managing an identity service is expensive and adds overhead of security and compliance. Using a 3rd party vendor will enable us to ship faster and focus on the real value add to product. The pay as you go plans which are available with most of the vendors will save us cost and overhead of monitoring and maintaining other options.
+Building or managing an identity service is expensive and adds overhead of security and compliance. Using a 3rd party vendor will enable a faster go-to market and allows engineering teams to focus on the capabilities which are a real value add to product. The pay as you go plans which are available with most of the vendors will save the cost and overhead of monitoring and maintaining other options.
 
 ## Tradeoffs - Mitigations
 Choosing a 3rd party vendor will limit us to build for capabilities it does not offer. Possible mitigation is to have a wrapper service around this vendor that would 
