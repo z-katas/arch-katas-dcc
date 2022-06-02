@@ -23,3 +23,7 @@ Decision and justification
 * <b> Extra service  </b> : This will be an additional service to monitor and another oppurtunity for bugs in the system. 
 * <b> Latency </b> : Latency due to an extra hop in the.
     Mitigation: Deploy BFF in same cluster as other microservices and comunicate to them within the cluster. This will add very little rount trip time.
+
+## References
+https://www.infoq.com/presentations/graphql-bff/
+https://www.mobilelive.ca/blog/why-backend-for-frontend-application-architecture#:~:text=Backend%20For%20Frontend%20(BFF)%20architecture,%2C%20and%20native%2Dmobile%20apps.
