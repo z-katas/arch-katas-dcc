@@ -30,6 +30,6 @@ Frontend apps (web and mobile) of the spotlight platform communicate with the pl
 
 ## Tradeoffs - Mitigations
 * Supporting multiple API standards will add an infrastructure overhead.
-  * Mitigation - Initially, introduce Graphql on just the backend-for-frontend (BFF) service to support the Spotlight web/mobile app. All the other platform services can start with supporting REST and the BFF can talk these services via REST. Long term, the platform services can support Graphql as well and the existing infra can be migrated to a Graphql federation design.
+  * Mitigation - Initially, introduce Graphql on just the [backend-for-frontend(BFF)](./adr-bff.md) service to support the Spotlight web/mobile app. All the other platform services can start with supporting REST and the BFF can talk these services via REST. Long term, the platform services can support Graphql as well and the existing infra can be migrated to a Graphql federation design.
 * Low performance (compared to gRPC) but this may not impact the use cases as there are not many services and the operations are not mission critical (do not affect human life or money).
 * For streaming (in-app notifications), if any, consider using web sockets.
