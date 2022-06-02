@@ -7,10 +7,8 @@
 1. Register the Candidate to the platform
 2. Profile Creation/Completion of the Candidate
 3. Uploading the road map of the candidate
-4. Tracking candidate progress
-5. Program enrollment of the candidate
-6. Taking feedback from the candidate on the course.
-7. Pull data from LinkedIn
+4. Program enrollment of the candidate
+5. Pull data from LinkedIn
 
 ### Driving Architectural Characteristics
 
