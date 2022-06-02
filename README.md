@@ -51,17 +51,29 @@ The MVP is envisioned to bring out the unique value proposition of the platform 
 ## Identifying Architectural Quanta
 
 <a name="event-storming"></a>
-### Event Storming
+### Component Identification
+Followed a mixture of event storming + actor-action approach to identify aggregates, components and quanta.
 
-<a name="quanta"></a>
-### Quanta - Responsibilities and Architectural Characteristics
+<a name="services"></a>
+### Services - Responsibilities and Architectural Characteristics
 * [Matching Service](./architectural-quanta/matching-service.md)
 * [Auth Service](./architectural-quanta/auth-service.md)
 * [Notification Service](./architectural-quanta/notification-service.md)
 * [Document Service](./architectural-quanta/document-service.md)
 
+<a name="quanta"></a>
+### Quanta
+* [Candidate - NPO Quanta](./quanta/candidate-npo.md)
+* [Recommendations](./architectural-quanta/auth-service.md)
+* [Integrations](./architectural-quanta/notification-service.md)
+* [Chat](./architectural-quanta/document-service.md)
+* [Support](./architectural-quanta/document-service.md)
+
+
+
 <a name="architectural-style"></a>
-## Architectural Style
+## Overall Architecture
+
 
 <a name="logical-view"></a>
 ### Logical View
