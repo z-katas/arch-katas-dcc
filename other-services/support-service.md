@@ -1,5 +1,4 @@
 ## Support Service
-![Image](../diagrams/support-service.jpg)
 
 This service enables users to raise tickets (technical / general) and track the status. It provides support team access to all tickets and current progress.
 

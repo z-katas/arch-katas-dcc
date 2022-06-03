@@ -1,5 +1,5 @@
 ## Reports Service
-![Image](../diagrams/reports-service.jpg)
+![Image](../diagrams/quanta/reports-quanta.jpg)
 
 This service enables users to generate various reports from analytics readily available in data warehouse
 
@@ -17,7 +17,7 @@ This service enables users to generate various reports from analytics readily av
 * **Configurability** - Users can create and configure the way reports need to be generated.
 
 ### Architectural Style Preferred
-Microservices
+Hybrid - Event driven (for processing periodic reports) + Microservices
 
 ### Relevant ADRs
 NA

@@ -1,10 +1,9 @@
-## Auth Service
-![Image](../diagrams/bff.jpg)
+## Backend for frontend Service
 
 This service handles all the frontend client interactions with the platform services.
 
 ### Responsibilities
-1. Expose a graphql interface for all the frontend usecases.
+1. Expose a graphql interface for all the frontend use cases.
 2. Route Graphql API requests from UI to respective microservices translating them into rest requests.
 3. Address the functional requirements which are different for UI from backend.
 4. Stream system events to UI incase of failures in async commits.

@@ -1,5 +1,5 @@
 ## Notification Service
-![Image](../diagrams/notification-service.jpg)
+![Image](../diagrams/quanta/notifications-quanta.jpg)
 
 ### Responsibilities
 1. Send in-app and push notifications to users, this will increase the usability of the app.

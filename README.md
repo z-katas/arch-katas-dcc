@@ -93,25 +93,26 @@ Going by the NPO numbers and under represented demographics mentioned above, we 
 
 Quanta identification helps in defining different parts of the platform and the scope of architectural characteristics. We followed a mixture of event storming + actor-action approach to identify aggregates, components and quanta.
 
-[Click here for more details on the exercise.](./architectural-quanta/quanta-identification.md)
+[Click here for more details on the exercise.](./quanta/quanta-identification.md)
 
 
 <a name="quanta"></a>
 ### Quanta
-* [Candidate - NPO Quanta](./quanta/candidate-npo.md)
-* [Recommendations](./architectural-quanta/auth-service.md)
+* [NPO - Candidate](./quanta/npo-candidate.md)
+* [Reports](./quanta/reports.md)
+* [Notification](./quanta/notification.md)
+* [Recommendations](./quanta/recommendation.md)
+* [Chat](./quanta/chat.md)
+* [Meetings](./quanta/meetings.md)
+* [Document](./quanta/document.md)
 * [NPO Integrations](./quanta/npo-integration.md)
-* [Chat](./architectural-quanta/document-service.md)
-* [Support](./architectural-quanta/support-service.md)
-* [Meetings](./architectural-quanta/meetings-service.md)
 
-<a name="services"></a>
+
+<a name="other-services"></a>
 ### Other Services
-* [Matching Service](./architectural-quanta/matching-service.md)
-* [Auth Service](./architectural-quanta/auth-service.md)
-* [Notification Service](./architectural-quanta/notification-service.md)
-* [Document Service](./architectural-quanta/document-service.md)
-* [Reports Service](./architectural-quanta/reports-service.md)
+* [Infrastructure Services](./architectural-quanta/infrastructure-service.md)
+* [Support](./other-services/support-service.md)
+* [BFF](./other-services/bff-service.md)
 
 
 <a name="platform-roadmap"></a>
@@ -129,23 +130,40 @@ Shorter iterations to get market feedback and pivoting, if necessary, becomes im
 ### MVP
 The MVP is envisioned to bring out the unique value proposition of the platform and solve the key business problem / pain points. It should be sufficient for the business to get market feedback and pivot.
 
+Areas to be addressed:
+* Base platform infrastructure
+  * CI / CD pipelines with continuous delivery.
+  * Logging
+  * Monitoring
+* Candidate - NPO quantum
+* Reports quantum - Without Analytics
+* Notification quantum
+* Recommendations quantum - Simple, without model training
+* Meetings quantum
+* Document quantum
+* Chat quantum
 
 ### Long Term
+Areas to be addressed:
+* Reports quantum - Advanced predictive analytics
+* Recommendations quantum - with model training
+* NPO Integrations
 
 <a name="overall-architecture"></a>
 ## Overall Architecture
 
 <a name="logical-view"></a>
 ### Logical View
-![Image](./diagrams/logical-arch/logical-architecture.jpg)
-[View as pdf](./diagrams/logical-arch/logical-architecture.pdf)
+![Image](./diagrams/logical-arch/spotlight-logical-architecture.jpg)
+[View as pdf](./diagrams/logical-arch/spotlight-logical-architecture.pdf)
 
 <a name="component-view"></a>
 ### Component View
 ![Image](./diagrams/component/spotlight-component-diagram.jpg)
 
-
 [View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
+
+[For better navigation on the image, use this miro board](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764526827413301&cot=14)
 
 <a name="call-flow-diagrams"></a>
 ### Call Flow diagrams
