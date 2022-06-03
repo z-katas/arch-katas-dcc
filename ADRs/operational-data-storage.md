@@ -1,6 +1,6 @@
 # Title
 
-Data Storage
+Operational Data Storage
 
 ## Status
 
@@ -26,17 +26,19 @@ With the growth of Microservices, Cloud, Distributed Applications, Global Scalin
 | Write Performance Requirements | Low    | High  |
 | Cost                           | High   | Low   |
 
+![Image](../diagrams/cap-theorem.jpg)
+credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-choose-CA-CP-and-AP_fig1_282519669
+
+![Image](../diagrams/cap-pyramid.jpg)
+credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-choose-CA-CP-and-AP_fig1_282519669
+
+
 ## Decision
 
-- We choose NoSQL over RDBMS since we can achieve great scalability and schema flexibility with it.
-- When compared to RDBMS, NoSQL has a lower cost.
+- NoSQL over RDBMS since scalability is desired. 
+- Schema flexibility for a green field project is important due to ambiguity and evolution of the system in the inital phases.
 
-![Image](../diagrams/cap-theorem.jpg)
-
-## Tradeoffs - Mitigations
-
-- The data consistency can be an issue with NoSQL
 
 ## Reference
 
-- https://datawarehouseview.wordpress.com/tag/cap-theorem/
+- https://www.bmc.com/blogs/cap-theorem/#:~:text=The%20CAP%20theorem%20is%20a,or%20availability%E2%80%94but%20not%20both
