@@ -8,8 +8,16 @@
   * [Candidate Flow](#candidate-flow)
   * [Non Profit Screens](#non-profit-flow)
 * [Assumptions](#assumptions)
+* [User Roles](#user-roles)
 * [Identifying Architectural Quanta](#identifying-architectural-quanta)
-  * [Event Storming](#event-storming)
+  * [Quanta](#quanta)
+  * [Other Services](#other-services)
+* [Overall Architecture](#overall-architecture)
+  * [Logical View](#logical-view)
+  * [Component View](#component-view)
+* [Call Flow diagrams](#call-flow-diagrams)
+* [Engineering Practices](#engineering-practices)
+* [Resources](#resources)
 
 <a name="glossary"></a>
 ## Glossary
@@ -66,7 +74,44 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 <a name="assumptions"></a>
 ## Assumptions
 #### Capacity planning
+Going by the NPO numbers and under represented demographics mentioned above, we decided to design the system for the following capacity:
 ![Image](images/capacity-planning.jpg)
+
+<a name="user-roles"></a>
+## User Roles
+* Under the Spotlight Platform
+  * PLATFORM_ADMIN
+  * COMMUNITY_LEADER
+* Under the NPO
+  * NP_ADMIN
+  * NP_USER
+* CANDIDATE
+
+<a name="identifying-architectural-quanta"></a>
+## Identifying Architectural Quanta
+**Architecture quantum** - *An independently deployable artifact with high functional cohesion and synchronous connascence*
+
+Quanta identification helps in defining different parts of the platform and the scope of architectural characteristics. We followed a mixture of event storming + actor-action approach to identify aggregates, components and quanta.
+
+[Click here for more details on the exercise.](./architectural-quanta/quanta-identification.md)
+
+
+<a name="quanta"></a>
+### Quanta
+* [Candidate - NPO Quanta](./quanta/candidate-npo.md)
+* [Recommendations](./architectural-quanta/auth-service.md)
+* [NPO Integrations](./quanta/npo-integration.md)
+* [Chat](./architectural-quanta/document-service.md)
+* [Support](./architectural-quanta/support-service.md)
+* [Meetings](./architectural-quanta/meetings-service.md)
+
+<a name="services"></a>
+### Other Services
+* [Matching Service](./architectural-quanta/matching-service.md)
+* [Auth Service](./architectural-quanta/auth-service.md)
+* [Notification Service](./architectural-quanta/notification-service.md)
+* [Document Service](./architectural-quanta/document-service.md)
+* [Reports Service](./architectural-quanta/reports-service.md)
 
 
 <a name="platform-roadmap"></a>
@@ -87,60 +132,47 @@ The MVP is envisioned to bring out the unique value proposition of the platform 
 
 ### Long Term
 
-<a name="identifying-architectural-quanta"></a>
-## Identifying Architectural Quanta
-**Architecture quantum** - *An independently deployable artifact with high functional cohesion and synchronous connascence*
+<a name="overall-architecture"></a>
+## Overall Architecture
 
-Quanta identification helps in defining different parts of the platform and the scope of architectural characteristics. We followed a mixture of event storming + actor-action approach to identify aggregates, components and quanta.
+<a name="logical-view"></a>
+### Logical View
+![Image](./diagrams/logical-arch/logical-architecture.jpg)
+[View as pdf](./diagrams/logical-arch/logical-architecture.pdf)
 
-[Click here for more details on the exercise.](./architectural-quanta/quanta-identification.md)
+<a name="component-view"></a>
+### Component View
+![Image](./diagrams/component/spotlight-component-diagram.jpg)
 
-<a name="services"></a>
-### Services - Responsibilities and Architectural Characteristics
-* [Matching Service](./architectural-quanta/matching-service.md)
-* [Auth Service](./architectural-quanta/auth-service.md)
-* [Notification Service](./architectural-quanta/notification-service.md)
-* [Document Service](./architectural-quanta/document-service.md)
-* [Reports Service](./architectural-quanta/reports-service.md)
 
-<a name="quanta"></a>
-### Quanta
-* [Candidate - NPO Quanta](./quanta/candidate-npo.md)
-* [Recommendations](./architectural-quanta/auth-service.md)
-* [NPO Integrations](./quanta/npo-integration.md)
-* [Chat](./architectural-quanta/document-service.md)
-* [Support](./architectural-quanta/support-service.md)
-* [Meetings](./architectural-quanta/meetings-service.md)
+[View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
 
+<a name="call-flow-diagrams"></a>
 ### Call Flow diagrams
+
 #### Course enrollment for a course callflow
 ![Image](diagrams/call-flows/call-flow-course-enrollment.jpg)
 
-### Post notification callflow
+### Post notification call flow
 ![Image](diagrams/call-flows/call-flow-post-notification.jpg)
 
 ### NPO user updating an excel sheet to update candidate assignment progress callflow
 ![Image](diagrams/call-flows/call-flow-candidate-assignment-progress.jpg)
 
-<a name="architectural-style"></a>
-## Overall Architecture
-
-
-<a name="logical-view"></a>
-### Logical View
-![Image](./diagrams/logical-arch/Logical-Architecture.jpg)
-* [View as pdf](./diagrams/logical-arch/Logical-Architecture.pdf)
-
-<a name="component-view"></a>
-### Component View
 
 <a name="engineering-practices"></a>
 ## Engineering Practices
 
-* [Continous Integrations and Continous Deployment ](./engineering-practices/CI-CD.md)
-* [Continous Delivery](./engineering-practices/Continous-Delivery.md)
+* [Continuous Integrations and Continuous Deployment ](./engineering-practices/CI-CD.md)
+* [Continuous Delivery](./engineering-practices/Continous-Delivery.md)
 * [Data compliance and Security](./engineering-practices/Data-compliance-security.md)
 * [Twelve Factor app](./engineering-practices/twelve-factor.md)
 * [Sidecar Pattern](./engineering-practices/sidecar-pattern.md)
 * [Monitoring and Observability](./engineering-practices/Monitoring.md)
 * [Feature Toggles](./engineering-practices/Feature-Toggles.md)
+
+
+<a name="resources"></a>
+## Resources
+* [Design Thinking](https://miro.com/app/board/uXjVOv-nLZE=/)
+* [Arch Katas Artifacts](https://miro.com/app/board/uXjVOv-nlBo=/)
