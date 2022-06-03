@@ -120,6 +120,8 @@ Quanta identification helps in defining different parts of the platform and the 
 
 <a name="logical-view"></a>
 ### Logical View
+![Image](./diagrams/Logical-Architecture.jpg)
+* [View as pdf](./diagrams/Logical-Architecture.pdf)
 
 <a name="component-view"></a>
 ### Component View

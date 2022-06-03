@@ -17,7 +17,7 @@ NoSQL databases are classified into 4 types.
 * Key-value store 
 * Wide column store
 
-![Image](../diagrams/cap-theorem.jpg)
+![Image](../images/cap-theorem.png)
 credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-choose-CA-CP-and-AP_fig1_282519669
 
 
