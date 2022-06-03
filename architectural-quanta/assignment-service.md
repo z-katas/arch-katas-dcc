@@ -10,8 +10,8 @@
 4. Assigning a mentor to the candidate
 5. Assigning community leader to the Non-profit organization
 6. Tracking candidate progress
-7. Feeback from the candidate
-8. Feeback from the Non-profit user
+7. Feedback from the candidate
+8. Feedback from the Non-profit user
 
 ### Driving Architectural Characteristics
 

@@ -24,3 +24,8 @@ The aggregates were then grouped to identify services. Services with synchronous
   * Email Service
   * 3rd Party Notification systems (for push and in-app notifications)
   * SMS 
+* Meeting
+* NPO-Integration
+* Recommendation
+* Documents
+* Chat
