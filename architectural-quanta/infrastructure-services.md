@@ -1,5 +1,4 @@
 ## Infrastructure Components
-![Image](../diagrams/auth-service.jpg)
 
 Components falling under this group are
 * API Gateway
@@ -17,7 +16,7 @@ These services handle the infrastructure and operational needs of the platform.
 3. Add a request id header to incoming requests for traceability.
 
 ### Sidecar Logger Responsibilities
-1. Collects logs from all the containers and services and pushes them to a central log repository
+1. Collects logs from the pods and push them to a central log repository
 
 ### Metrics collector Responsibilities
 1. Collect metrics for the entire platform, these metrics include 

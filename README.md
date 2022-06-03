@@ -126,3 +126,11 @@ Quanta identification helps in defining different parts of the platform and the 
 
 <a name="engineering-practices"></a>
 ## Engineering Practices
+
+* [Continous Integrations and Continous Deployment ](./engineering-practices/CI-CD.md)
+* [Continous Delivery](./engineering-practices/Continous-Delivery.md)
+* [Data compliance and Security](./engineering-practices/Data-compliance-security.md)
+* [Twelve Factor app](./engineering-practices/twelve-factor.md)
+* [Sidecar Pattern](./engineering-practices/sidecar-pattern.md)
+* [Monitoring and Observability](./engineering-practices/Monitoring.md)
+* [Feature Toggles](./engineering-practices/Feature-Toggles.md)
