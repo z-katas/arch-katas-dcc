@@ -112,7 +112,15 @@ Quanta identification helps in defining different parts of the platform and the 
 * [Support](./architectural-quanta/support-service.md)
 * [Meetings](./architectural-quanta/meetings-service.md)
 
+### Call Flow diagrams
+#### Course enrollment for a course callflow
+![Image](diagrams/call-flows/call-flow-course-enrollment.jpg)
 
+### Post notification callflow
+![Image](diagrams/call-flows/call-flow-post-notification.jpg)
+
+### NPO user updating an excel sheet to update candidate assignment progress callflow
+![Image](diagrams/call-flows/call-flow-candidate-assignment-progress.jpg)
 
 <a name="architectural-style"></a>
 ## Overall Architecture
@@ -120,6 +128,8 @@ Quanta identification helps in defining different parts of the platform and the 
 
 <a name="logical-view"></a>
 ### Logical View
+![Image](./diagrams/logical-arch/Logical-Architecture.jpg)
+* [View as pdf](./diagrams/logical-arch/Logical-Architecture.pdf)
 
 <a name="component-view"></a>
 ### Component View
