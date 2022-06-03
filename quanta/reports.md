@@ -1,5 +1,5 @@
 ## Reports Service
-![Image](../diagrams/reports-service.jpg)
+![Image](../diagrams/quanta/reports-quanta.jpg)
 
 This service enables users to generate various reports from analytics readily available in data warehouse
 

@@ -1,5 +1,5 @@
 ## Meetings Service
-![Image](../diagrams/meetings-service.jpg)
+![Image](../diagrams/quanta/meeting-quanta.jpg)
 
 This service enables users to raise tickets (technical / general) and track the status. It provides support team access to all tickets and current progress.
 

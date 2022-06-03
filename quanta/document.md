@@ -1,5 +1,5 @@
 ## Document Service
-![Image](../diagrams/document-service.jpg)
+![Image](../diagrams/quanta/documents-quanta.jpg)
 This service stores and retrieves files. The files could be images (avatars, NPO favicons, etc.) or documents (candidate resumes, NPO offering details, reports - PDF / Spreadsheet, etc.), which are not expected to be large.
 
 ### Responsibilities

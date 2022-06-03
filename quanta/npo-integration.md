@@ -1,6 +1,6 @@
 ## NPO Integration [Long Term]
 
-![Image](../diagrams/npo-integration.jpg)
+![Image](../diagrams/quanta/np-integration-quanta.jpg)
 
 The spotlight platform's requirements state that *Tracking candidate progress* and *End-Use Ease of Use* are hard requirements. Without an automated system in place, NP Users (admins, mentors, tutors, etc.) would have to manually update candidate's progress on assignments by logging into the spotlight app, which may leave room for error or a gap in updating candidate's progress. Similarly, some offerings may need manual interventions before accepting candidate enrollments. This is unavoidable if the NPOs do not have a system or an API (outside of the Spotlight platform) of their own to manage their offerings and candidates. 
 

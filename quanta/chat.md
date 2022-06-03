@@ -1,5 +1,8 @@
-## Chat Service
-![Image](../diagrams/chat-service.jpg)
+## Chat
+![Image](../diagrams/quanta/chat-quanta.jpg)
+
+### Context
+Having an in-app chat support on the platform is a great way to engage with the community. Also, candidate doesn't have to leave the app to engage with the mentors (say over email). 
 
 ### Responsibilities
 1. Initiate a new converstation with users.
@@ -28,3 +31,6 @@
 ### Architectural Style Preferred
 Microservices
 
+### Tradeoffs - Mitigation Strategies
+* Building a highly responsive chat service within the platform is a challenge and time consuming. Also, it is not the core value proposition of the 
+  * Go for an external chat provider

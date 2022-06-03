@@ -1,5 +1,6 @@
-## Matching
+## Recommendation
 Intelligently predicting and providing relevant recommendations regarding NPO offerings to the candidate adds value and fulfills the intent of the candidate of logging on the app. And, the matching can only become better over time with model training with more data captured by the platform. 
+![Image](../diagrams/quanta/recommendations-quanta.jpg)
 
 ### Responsibilities
 1. Recommends communities and NPO's to the candidates based on offerings and testimonials.
