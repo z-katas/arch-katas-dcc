@@ -15,10 +15,10 @@ Spotlight platform has variety of usecases involving files and documents. For ex
 * Storing files on our file system
 * Using a 3rd party cloud file system provider like AWS S3
 
-### PrOACT (if any)
+### PrOACT
 
 | Criteria      | Own file server | S3 | 
-| ----------- | ----------- | ----------- | ----------- 
+| ----------- | ----------- | ----------- |
 | Time to build/integrate      | Very high       |low|
 | Cost involved  | Build + maintain        | pay as you go | 
 | Security implications | High | Low(taken care by provider)

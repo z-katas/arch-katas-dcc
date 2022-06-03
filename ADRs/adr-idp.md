@@ -1,5 +1,5 @@
 # Title
-Identity Provider
+Identity Provider (IdP)
 
 ## Status
 proposed 
@@ -14,10 +14,7 @@ Identity and access control is a critical piece of the spotlight app since it wi
 
 
 
-
-
-
-### PrOACT (if any)
+### PrOACT 
 
 | Criteria      | Self built identity service | Self hosted,pre-built identity platform | 3rd party platform | 
 | ----------- | ----------- | ----------- | ----------- 
@@ -28,10 +25,12 @@ Identity and access control is a critical piece of the spotlight app since it wi
 
 
 ## Decision
-**Leverage 3rd party fully managed identity solutions**.
-Building or managing an identity service is expensive and adds overhead of security and compliance. Using a 3rd party vendor will enable a faster go-to market and allows engineering teams to focus on the capabilities which are a real value add to product. The pay as you go plans which are available with most of the vendors will save the cost and overhead of monitoring and maintaining other options.
+**Leverage 3rd party fully managed identity solutions**
+Building or managing an identity service is expensive and adds overhead of security and compliance. Using a 3rd party vendor will enable a faster go-to market and allows engineering teams to focus on the key valye proposition of the product. The pay as you go plans which are available with most of the vendors will save the cost and overhead of developing, monitoring and maintaining other options.
 
 ## Tradeoffs - Mitigations
-Choosing a 3rd party vendor will limit us to build for capabilities it does not offer. Possible mitigation is to have a wrapper service around this vendor that would 
+Choosing a 3rd party vendor will limit us to build for capabilities it does not offer. 
+
+Possible mitigation is to have a wrapper service around this vendor that would 
 * behave as an identity facade for the rest of the system
 * Build capabilities that identity provider does not support 

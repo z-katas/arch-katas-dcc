@@ -15,7 +15,7 @@ With the growth of Microservices, Cloud, Distributed Applications, Global Scalin
 - RDBMS
 - NoSQL
 
-### PrOACT (if any)
+### PrOACT
 
 | Criteria                       | RDBMS  | NoSQL |
 | ------------------------------ | ------ | ----- |

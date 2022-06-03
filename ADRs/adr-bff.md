@@ -1,28 +1,29 @@
 # Title
-Backend for frontend(BFF)
+Backend for frontend (BFF) with Graphql
 
 ## Status
 proposed 
 
 ## Context
-Following the [API standard decision](./adr-api-standard.md) the spotlight apps would require to consume graphql APIs and external consumer services would prefer Rest APIs.It is a infrastructure overhead for all the microservices to supports both the standards initially. A Backend for frontend is a service catered for frontend needs and can follow a different API standard from rest of the system. 
+Following the [API standard decision](./adr-api-standard.md) the Spotlight apps would require to consume graphql APIs, but external consumer services would prefer Rest APIs to integrate with the platform. It is an infrastructure overhead for all the microservices to supports both the standards initially. A Backend for frontend is a service catered for frontend needs and can follow a different API standard (Graphql) from rest of the system. 
 
 <b>Advantages of BFF pattern with Graphql</b>
 
 * Solves problems of over fetching and underfetching. 
 * Solve functional requirements which are different for UI from backend.
-* The frontend client would only need to hit a single service. 
+* The frontend client would only need to hit a single service to fetch aggregated data from multiple services, thus reducing the overall network overhead.
+* If the frontend uses typescript, this service can be managed by the frontend developers. This gives them greater flexibility to complete the UI sooner without having to rely on the delivery of the underlying application APIs.
 
 ## Decision
-Decision and justification
+Have a BFF service with Graphql API standard to make use of the above advantages.
 
 ## Tradeoffs - Mitigations
 
-* <b> Single point of failure</b> : If BFF is not available the UI apps will not function. 
-    Mitigation: Have BFF in multiple availability zones.
-* <b> Extra service  </b> : This will be an additional service to monitor and another oppurtunity for bugs in the system. 
-* <b> Latency </b> : Latency due to an extra hop in the.
-    Mitigation: Deploy BFF in same cluster as other microservices and comunicate to them within the cluster. This will add very little rount trip time.
+* **Single point of failure** : If BFF is not available the UI apps will not function.
+    * Mitigation: Deploy BFF in multiple availability zones.
+* **Extra service** : This will be an additional service to monitor and another oppurtunity for bugs in the system. 
+* **Latency** : Increased latency due to an extra hop to fetch simple (non-aggregated) data.
+  * Mitigation: Deploy BFF in same cluster as other microservices and comunicate to them within the cluster. This will add very little rount trip time. Also, BFF pattern is most effective when a page / widget on the app needs aggregated data from multiple services. 
 
 ## References
 https://www.infoq.com/presentations/graphql-bff/
