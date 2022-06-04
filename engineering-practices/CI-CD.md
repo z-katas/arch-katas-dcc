@@ -1,22 +1,22 @@
 # CICD practices
 
-Continous integration and continous delivery must be an integral part of enginerering culture. 
+Continuous integration and continuous delivery must be an integral part of engineering culture. 
 
 
 ![alt text](../images/cicd.png) 
 credits : src : https://www.synopsys.com/glossary/what-is-cicd.html
 
 
-## Continous Integration Practices
+## Continuous Integration Practices
 
 * Linting and format checks for code consistency.
-* Code should be built ensuring no static and complite time errors.
+* Code should be built ensuring no static and compile-time errors.
 * Unit tested to ensure there are no functional bugs.
 * Code quality checks to ensure bad code stays away from the main branch.
 
-## Continous Deployment Practices
+## Continuous Deployment Practices
 
-* Code shipped automatically when merged to main branch
+* Code ships automatically when merged to the main branch
 
 
 ## References

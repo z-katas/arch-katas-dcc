@@ -24,8 +24,8 @@ credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-ch
 
 ## Decision
 
-- As there won't be too many writes document based store would be a better choice. 
-- the document data stores offer data partioning which would help as the platform expands towards different regions.
+- As there won't be too many writes, a document-based store would be a better choice. 
+- the document data stores offer data partitioning, which would help as the platform expands toward different regions.
 - Key-value store would be helpful in use cases of caches, where aggregate queries are not required.
 
 ## Reference
