@@ -34,5 +34,4 @@ Hybrid - Microservices and Event-Driven
 
 ### Relevant ADRs
 
-- [External IdP](../ADRs/external-idp.md)
-- [Organizations not part of auth service](../ADRs/organizations-not-part of-auth-service.md)
+- [External IdP](../ADRs/adr-idp.md)

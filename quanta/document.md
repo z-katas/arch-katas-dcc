@@ -18,5 +18,4 @@ This service stores and retrieves files. The files could be images (avatars, NPO
 Microservices
 
 ### Relevant ADRs
-* [External Document Storage](../ADRs/external-document-storage.md)
-* [Data route to storage](../ADRs/data-route-to-storage.md)
+* [External Document Storage](../ADRs/adr-external-document-storage.md)
