@@ -17,9 +17,7 @@
 
 #### Top 3
 
-1. Testability
-   The service entails creating an assignment as well as designating community leaders and mentors, and testability will aid in the detection of bugs.
-2. Interoperability
-   As service needs to integrate with organizations system to fetch candidate progress on the program enrolled.
-3. Availability
-   As the other service are dependent on this service , it has to be highly available. 
+- **Testability** - The service entails creating an assignment as well as designating community leaders and mentors, and testability will aid in the detection of bugs.
+
+- **Interoperability** - As service needs to integrate with the organizations system to fetch candidate progress on the program enrolled.
+- **Availability** - As the other service are dependent on this service, it has to be highly available.

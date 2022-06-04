@@ -7,7 +7,7 @@ This service enables users to generate various reports from analytics readily av
 1. Let users generate and download reports on demand in requisite formats - PDF, CSV etc.
 2. Scheduler to send reports - EOD, Weekly, Monthly etc.
 3. Provide most commonly used reports by default
-4. Enable creation of custom reports (using custom query language)
+4. Enable the creation of custom reports (using custom query language)
 
 ### Driving Architectural Characteristics
 
@@ -17,7 +17,7 @@ This service enables users to generate various reports from analytics readily av
 * **Configurability** - Users can create and configure the way reports need to be generated.
 
 ### Architectural Style Preferred
-Hybrid - Event driven (for processing periodic reports) + Microservices
+Hybrid - Event-driven (for processing periodic reports) + Microservices
 
 ### Relevant ADRs
 NA

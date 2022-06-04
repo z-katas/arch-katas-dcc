@@ -4,7 +4,7 @@ Intelligently predicting and providing relevant recommendations regarding NPO of
 
 ### Responsibilities
 1. Recommends communities and NPO's to the candidates based on offerings and testimonials.
-2. Recommends programs that candidate can enroll into
+2. Recommends programs that candidates can enroll into
 3. The service learns based on the feedback of previous recommendations and continues to improve as the system grows.
 
 ### Components
@@ -15,11 +15,11 @@ Intelligently predicting and providing relevant recommendations regarding NPO of
 ### Driving Architectural Characteristics
 #### Top 3
 1. Adaptability
-   The system continues to adapt to growing requirements and varieties of users/communities it onboards.
+   The system continues to adapt to growing requirements and varieties of users/communities it onboard.
 2. Data integrity
-   The accuracy of matches is really crucial increasing the user engagement and value proposition of the platform
+   The accuracy of matches is really crucial in increasing the user engagement and value proposition of the platform
 3. Scalability
-   Scale the matching algorithm and workflow to ever growing platform users.
+   Scale the matching algorithm and workflow to ever-growing platform users.
 
 #### Other Driving Characteristics
 

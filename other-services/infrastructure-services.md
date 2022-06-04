@@ -11,9 +11,9 @@ These services handle the infrastructure and operational needs of the platform.
 
 
 ### API Gateway Responsibilities
-1. Route the traffice to respective microservices in the systems.
+1. Route the traffics to respective microservices in the systems.
 2. Authenticate the incoming requests.
-3. Add a request id header to incoming requests for traceability.
+3. Add a request-id header to incoming requests for traceability.
 
 ### Sidecar Logger Responsibilities
 1. Collects logs from the pods and push them to a central log repository
@@ -23,7 +23,7 @@ These services handle the infrastructure and operational needs of the platform.
     * No. of API requests
     * Success and failure rates
     * Response times
-2. Store the metrics to a time series database
+2. Store the metrics in a time-series database
 
 ### Monitoring and Alerting systems
 

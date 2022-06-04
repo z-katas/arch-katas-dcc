@@ -5,12 +5,12 @@ Backend for frontend (BFF) with Graphql
 proposed 
 
 ## Context
-Following the [API standard decision](./adr-api-standard.md) the Spotlight apps would require to consume graphql APIs, but external consumer services would prefer Rest APIs to integrate with the platform. It is an infrastructure overhead for all the microservices to supports both the standards initially. A Backend for frontend is a service catered for frontend needs and can follow a different API standard (Graphql) from rest of the system. 
+Following the [API standard decision](./adr-api-standard.md), the Spotlight apps would require to consume graphql APIs, but external consumer services would prefer Rest APIs to integrate with the platform. It is an infrastructure overhead for all the microservices to supports both the standards initially. BFF is a service catered for frontend needs and can follow a different API standard (Graphql) from the rest of the system. 
 
 <b>Advantages of BFF pattern with Graphql</b>
 
 * Solves problems of over fetching and under fetching. 
-* Solve functional requirements which are different for UI from backend.
+* Solve functional requirements which are different for UI from the backend.
 * The frontend client would only need to hit a single service to fetch aggregated data from multiple services, thus reducing the overall network overhead.
 * If the frontend uses typescript, this service can be managed by the frontend developers. This gives them greater flexibility to complete the UI sooner without having to rely on the delivery of the underlying application APIs.
 

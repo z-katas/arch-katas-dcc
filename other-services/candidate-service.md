@@ -14,12 +14,12 @@
 
 #### Top 3
 
-1. Scalability
-   As this is a fundamental service, and as the number of users grows, the service will see more traffic.
-2. Availability
-   Because the service is used to collect information regarding the candidate, it must be highly accessible.
-3. Data Integrity
-   Because the service is in charge of keeping the information relevant to the candidates, Data Integrity will assure the quality and completeness of the data.
+- **Scalability**
+  As this is a fundamental service, and as the number of users grows, the service will see more traffic.
+- **Availability**
+  Because the service is used to collect information regarding the candidate, it must be highly accessible.
+- **Data Integrity**
+  Because the service is in charge of keeping the information relevant to the candidates, Data Integrity will assure the quality and completeness of the data.
 
 ### Architectural Style Preferred
 

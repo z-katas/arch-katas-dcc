@@ -17,12 +17,12 @@
 
 ##### ![Driving Architectural Characteristics](../diagrams/np-service-architecture-worksheet.jpg)
 
-1. Scalability
-   The service is a fundamental function, and as the number of organizations grows, the service will see more traffic.
-2. Availablity
-   Because the service is used to register new non-profit organizations and establish a listing of their services, it must be highly accessible.
-3. Data Integrity
-   Because the service is in charge of keeping the information relevant to the organization, Data Integrity will assure the quality and completeness of the data.
+- **Scalability**
+  The service is a fundamental function, and as the number of organizations grows, the service will see more traffic.
+- **Availability**
+  Because the service is used to register new non-profit organizations and establish a listing of their services, it must be highly accessible.
+- Data Integrity
+  Because the service is in charge of keeping the information relevant to the organization, Data Integrity will assure the quality and completeness of the data.
 
 ### Architectural Style Preferred
 
