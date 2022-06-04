@@ -8,7 +8,7 @@ Proposed
 
 ## Context
 
-There are a myriad of cloud providers offering a wide range of services. It’s necessary to evaluate each provider and choose the one which best suites the Spotlight platform's use cases.
+There is a myriad of cloud providers offering a wide range of services. It’s necessary to evaluate each provider and choose the one that best suits the Spotlight platform's use cases.
 
 ### Options
 

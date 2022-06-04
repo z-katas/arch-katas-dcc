@@ -5,11 +5,11 @@ Document storage system
 proposed 
 
 ## Context
-Spotlight platform has variety of usecases involving files and documents. For example
- * NP admin wants to engage with his/her community with help of a post involving an image. 
+Spotlight platform has a variety of use-cases involving files and documents. For example
+ * NP admin wants to engage with his/her community with the help of a post involving an image. 
  * NP helps a candidate with resume review. 
  * Feed items with posts having images in them.
- Hence document storage and retrievals becomes a regular usecase for the platform.
+ Hence, document storage and retrievals has become a regular use-case for the platform.
 
 ### Alternatives
 * Storing files on our file system
@@ -21,8 +21,8 @@ Spotlight platform has variety of usecases involving files and documents. For ex
 | ----------- | ----------- | ----------- |
 | Time to build/integrate      | Very high       |low|
 | Cost involved  | Build + maintain        | pay as you go | 
-| Security implications | High | Low(taken care by provider)
-| Maintainance and monitoring overhead | high   | no overhead| 
+| Security implications | High | Low(taken care of by provider)
+| Maintenance and monitoring overhead | high   | no overhead| 
 | Flexibility | high        | medium | low| 
 
 
@@ -34,6 +34,6 @@ Spotlight platform has variety of usecases involving files and documents. For ex
 * Latency 
     A file server/access point for every availability zone is not needed as performance is not a critical aspect. 
 
-A possible mitigation strategy for  the above is to have CDNs or a caching mechanism that would cache frequently used media. This would solve use cases like
-* A post receiving lot of traction which has a image need not fetch image from s3 and  can be served from cache. 
-* In future if we want to support a low latency system, a file can be stored in region and can be served to other region through cdns.
+A possible mitigation strategy for the above is to have CDNs or a caching mechanism that would cache frequently used media. This would solve use cases like
+* A popular post with an image does not need to fetch the image from S3 and can instead be served from cache. 
+* In the future, if we want to support a low latency system, a file can be stored in a region and can be served to other regions through CDN.

@@ -7,7 +7,7 @@ This service stores and retrieves files. The files could be images (avatars, NPO
 
 ### Driving Architectural Characteristics
 #### Top 3
-* **Recoverability** - In case of disasters, the service is expected to lose the storage. Regular backups need to be taken.
+* **Recoverability** - In case of disasters, the service is expected to lose storage. Regular backups need to be taken.
 * **Responsiveness** - Respond to document requests as quickly as possible. Probably, cache the frequently used files using CDNs.
 * **Scalability** - Since this is integral to the business to store resumes, NPO offerings, etc., traffic on the service is expected to quickly rise with the increase in no. of NPOs and candidates.
 
