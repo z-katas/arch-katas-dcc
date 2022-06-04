@@ -36,7 +36,7 @@ credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-ch
 ## Decision
 
 - NoSQL over RDBMS since scalability is desired. 
-- Schema flexibility for a green field project is important due to ambiguity and evolution of the system in the inital phases.
+- Schema flexibility for a green field project is important due to ambiguity and the evolution of the system in the initial phases.
 
 
 ## Reference

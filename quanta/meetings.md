@@ -1,7 +1,7 @@
 ## Meetings
 ![Image](../diagrams/quanta/meeting-quanta.jpg)
 
-This service enables users to raise tickets (technical / general) and track the status. It provides support team access to all tickets and current progress.
+This service enables users to raise tickets (technical/general) and track the status. It provides support team access to all tickets and current progress.
 
 ### Responsibilities
 1. Let NPOs create & manage events.

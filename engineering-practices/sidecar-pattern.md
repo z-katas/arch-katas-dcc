@@ -5,8 +5,8 @@ Applications and services often require related functionality, such as monitorin
 
 ## Sidecar Pattern
 
-* The sidecar is a component of the application which is attached to a parent application and provides supporting features.
-* The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent. 
+* The sidecar is a component of the application that is attached to a parent application and provides supporting features.
+* The sidecar also shares the same lifecycle as the parent application, is created and retired alongside the parent. 
 
 ![alt text](../images/sidecar-log-collector.png) 
 credits: https://dev.to/peterj/sidecar-container-pattern-314

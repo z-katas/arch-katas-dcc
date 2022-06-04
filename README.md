@@ -12,6 +12,7 @@
 * [Identifying Architectural Quanta](#identifying-architectural-quanta)
   * [Quanta](#quanta)
   * [Other Services](#other-services)
+* [Platform Roadmap](#platform-roadmap)
 * [Overall Architecture](#overall-architecture)
   * [Logical View](#logical-view)
   * [Component View](#component-view)
@@ -68,7 +69,7 @@ The team went through a design thinking exercise to understand the user needs an
 
 [Design artifacts](./design/design-artifacts.md)
 
-<a name="golden-path"></a>
+<a name="candidate-flow"></a>
 ### Candidate Golden Path
 
 ![Image](./images/candidate-golden-path.jpg)
@@ -121,7 +122,7 @@ Quanta identification helps in defining different parts of the platform and the 
 
 <a name="other-services"></a>
 ### Other Services
-* [Infrastructure Services](./architectural-quanta/infrastructure-service.md)
+* [Infrastructure Services](./other-services/infrastructure-services.md)
 * [Support](./other-services/support-service.md)
 * [BFF](./other-services/bff-service.md)
 

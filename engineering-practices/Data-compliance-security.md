@@ -4,7 +4,7 @@ The system deals with PII data(emails, contact details) which are sensitive. Com
 
 ## Measures to be followed
 
-* Store no PII data in our system and store them entirely in a 3rd party system which is compliant. 
-* If the system needs to store any such information use a data compliant database and cloud provider.
+* Store no PII data in our system and store them entirely in a 3rd party system that is compliant. 
+* If the system needs to store any such information, use a data-compliant database and cloud provider.
 * Encrypt the data at rest and transit.
 * Ensure regular security scans and alerts in the system.
