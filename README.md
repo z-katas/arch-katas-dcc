@@ -64,12 +64,15 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 
 <a name="user-experience"></a>
 ## User experience
+The team went through a design thinking exercise to understand the user needs and their pain points. The following golden paths were derived
 
 <a name="golden-path"></a>
-### Candidate Flow
+### Candidate Golden Path
+![Image](./images/candidate-golden-path.jpg)
 
 <a name="non-profit-flow"></a>
-### Few Non-Profit Screens
+### Non-Profit Golden Path
+![Image](./images/non-profit-organization-golden-path.jpg)
 
 <a name="assumptions"></a>
 ## Assumptions
