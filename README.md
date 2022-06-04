@@ -6,7 +6,7 @@
 * [Requirement Analysis](#requirement-analysis)
 * [User Experience](#user-experience)  
   * [Candidate Flow](#candidate-flow)
-  * [Non Profit Screens](#non-profit-flow)
+  * [Non Profit Flow](#non-profit-flow)
 * [Assumptions](#assumptions)
 * [User Roles](#user-roles)
 * [Identifying Architectural Quanta](#identifying-architectural-quanta)
@@ -66,13 +66,21 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 ## User experience
 The team went through a design thinking exercise to understand the user needs and their pain points. The following golden paths were derived
 
+[Design artifacts](./design/design-artifacts.md)
+
 <a name="golden-path"></a>
 ### Candidate Golden Path
+
 ![Image](./images/candidate-golden-path.jpg)
+
+https://www.loom.com/share/7d1540ecfed24c0191f7087d7a747260
 
 <a name="non-profit-flow"></a>
 ### Non-Profit Golden Path
+
 ![Image](./images/non-profit-organization-golden-path.jpg)
+
+https://www.loom.com/share/2f3be1ded8bd438e958ffd8cc9595e83
 
 <a name="assumptions"></a>
 ## Assumptions

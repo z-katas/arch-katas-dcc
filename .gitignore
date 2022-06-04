@@ -1,3 +1,5 @@
 .vscode
 .idea/**
 .DS_STORE
+diagrams/.DS_STORE
+**/.DS_STORE
