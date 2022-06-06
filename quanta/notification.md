@@ -1,4 +1,4 @@
-## Notification Service
+## Notification
 ![Image](../diagrams/quanta/notifications-quanta.jpg)
 
 ### Responsibilities
