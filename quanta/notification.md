@@ -10,6 +10,8 @@
 
 
 ### Driving Architectural Characteristics
+
+![Image](../images/notification-quantum-worksheet.png)
 #### Top 3
 ##### Driving Architectural Characteristics
 1. Concurrency
@@ -24,9 +26,6 @@
    Security around emailing service will be the responsibility of the emailing vendor.
 2. Scalability and Availability  
    The notification provider should be highly scalable and available at the same time
-
-
-#### Other Driving Characteristics
 
 
 ### Architectural Style Preferred

@@ -11,6 +11,8 @@ This service enables users to generate various reports from analytics readily av
 
 ### Driving Architectural Characteristics
 
+![Image](../images/reports-quantum-worksheet.png)
+
 #### Top 3
 * **Performance** - Since reports can be fetched for varying time periods, the amount of data to be processed might be high - necessary optimizations must be done to ensure decent performance.
 * **Recoverability** - Service must recover from any failures fast and with minimal loss of data.

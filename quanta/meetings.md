@@ -12,6 +12,7 @@ This service enables users to raise tickets (technical/general) and track the st
 
 ### Driving Architectural Characteristics
 
+![Image](../images/meetings-quantum-worksheet.png)
 #### Top 3
 * **Availability** - The service must be available at all times since other services are dependent on it.
 * **Feasibility** - Meetings is the core value proposition of the platform to enable better engagement between the user, especially Candidates and Mentors. So, building it as part of the MVP is inevitable and feasibility becomes important. One can consider going for a 3rd party chat provider, rather than building in-house.

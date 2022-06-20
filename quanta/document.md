@@ -6,6 +6,8 @@ This service stores and retrieves files. The files could be images (avatars, NPO
 1. Document management - create, read, delete
 
 ### Driving Architectural Characteristics
+
+![Image](../images/documents-quantum-worksheet.png)
 #### Top 3
 * **Recoverability** - In case of disasters, the service is expected to lose storage. Regular backups need to be taken.
 * **Responsiveness** - Respond to document requests as quickly as possible. Probably, cache the frequently used files using CDNs.
