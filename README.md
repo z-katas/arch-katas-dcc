@@ -35,14 +35,15 @@ We are a team of passionate software engineers & designers from product-market-f
 <a name="glossary"></a>
 ## Glossary
 * NPO / NP - Both acronyms are used to refer to non-profit organizations.
+* NFR - Non-functional requirement
 
 <a name="prelude"></a>
 ## Prelude
-There are about 1.6 million non-profit organizations [Source](https://independentsector.org/about/the-charitable-sector/) and more than 100 million underrepresented people [Source](https://www.governing.com/archive/gov-nonprofits.html) in the US. But the problem today is that these NPOs are decentralized and there is no support / framework for active collaboration. Also, lack of visibility of the NPOs creates a barrier of access to the underrepresented demographics. 
+There are about 1.6 million non-profit organizations [[Source](https://independentsector.org/about/the-charitable-sector/)] and more than 100 million underrepresented people [[Source](https://www.governing.com/archive/gov-nonprofits.html)] in the US. But the problem today is that these NPOs are decentralized and there is no support / framework for active collaboration. Also, lack of visibility of the NPOs creates a barrier of access to the underrepresented demographics. 
 
-Let's imagine a use case - A candidate enrolled for a course in an institution in City A, away from his home city. He would need to travel to City A, find an affordable place to stay, search for places to get groceries and food, etc. Without a centralized system and collaboration between NPOs, the candidate may end up spending a lot more and may lose interest if it is not viable.
+Let's imagine a use case - A candidate plans to enrol for a course in an institution in **City A**, away from his home city. He would need to travel to **City A**, find an affordable place to stay, search for places to get groceries and food, etc. Also, after completion of the course, he would need to prepare for interviews and get placed. Without a centralized system and collaboration between NPOs, the candidate may end up spending a lot more than what he can afford and his career path / shift may not be feasible.
 
-The numbers mentioned above are quite large and provide tremendous opportunities to build a platform and enable the collaboration.
+The number of NPOs and underrepresented people mentioned above are quite large and provide tremendous opportunities to build a platform to enable the collaboration.
 
 Diversity Cyber Council has come forward with a vision to enhance inclusion and representation in the tech industry through training, mentoring, networking, and visibility programs.
 
@@ -52,11 +53,20 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 
 <a name="requirement-analysis"></a>
 ## Requirement Analysis
+The following analyses follow the format:
+*Given business requirement*
+  * Initial Thoughts (if any)
+  * NFRs (if any)
+    * NFR 1
+    * NFR 2
+
+
 1. *The Platform must establish a way to incentivize engagement such as sharing of resources, collaboration, networking, facilitating introductions, and partnerships*
-   * NPOs or candidates can be rewarded with points for various activities they perform using the system. Google places is a good example which rewards with points on posting reviews, images, etc. on places. And an individual is entitled to certain benefits upon accumulating certain no. of points.                                         
-   * The platform must be **configurable** to introduce or update new incentive rules to reward engagement.
+   * NPOs or candidates can be rewarded with points for various activities they perform using the system. Google places is a good example which rewards with points on posting reviews, images, etc. on places. And an individual is entitled to certain benefits upon accumulating certain no. of points. The platform could also use something similar to reward points for the NPOs and candidates.                                      
+   * NFRs
+     * **Configurability** - The platform must be configurable to introduce or update new incentive rules to reward engagement.
 2. *The Platform must categorize/tag nonprofit support services to match candidate needs identified in the onboarding assessment to include but not limited to Resume Writing Services, Interview Prep, Free Business Attire, Apprenticeship Program Registration, Training Program Registration, College & University Registration, Free Grocery & Meal Services, Discounted Rent & Housing Services, Daycare/Child Care Services, Mentorship/Career Advocate Services*
-   * **Tagging** and **indexing** of resources based on services for faster searches.		
+   * Allow tagging and indexing of categories on NPO support services and candidate profile **Tagging** and **indexing** of resources based on services for faster searches.		
 3. *End-Use Ease of Use is a hard requirement*
    * The underrepresented demographics may not be tech-savvy. So, **Usability** of the platform and the app becomes important.
 4. *Tracking candidate progress is a hard requirement.*
@@ -77,7 +87,7 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 
 <a name="user-experience"></a>
 ## User experience
-The team went through a design thinking exercise to understand the user needs and their pain points. The following golden paths were derived
+The team went through a design thinking exercise to understand the Candidate and NP user profiles, and empathize needs and pain points. The following golden paths were derived
 
 [Design artifacts](./design/design-artifacts.md)
 
@@ -98,17 +108,15 @@ https://www.loom.com/share/2f3be1ded8bd438e958ffd8cc9595e83
 <a name="assumptions"></a>
 ## Assumptions
 #### Capacity planning
-Going by the NPO numbers and under represented demographics mentioned above, we decided to design the system for the following capacity:
+Going by the no. of NPOs and under represented demographics mentioned in [Prelude](#prelude), we decided to design the system for the following capacity:
 ![Image](images/capacity-planning.jpg)
 
 <a name="user-roles"></a>
 ## User Roles
-* Under the Spotlight Platform
-  * PLATFORM_ADMIN
-  * COMMUNITY_LEADER
-* Under the NPO
-  * NP_ADMIN
-  * NP_USER
+* PLATFORM_ADMIN (associated with the Spotlight Platform)
+* COMMUNITY_LEADER (associated with the Spotlight Platform)
+* NP_ADMIN (associated with the NPO)
+* NP_USER (associated with the NPO)
 * CANDIDATE
 
 <a name="identifying-architectural-quanta"></a>
