@@ -13,6 +13,8 @@ Having in-app chat support on the platform is a great way to engage with the com
 
 
 ### Driving Architectural Characteristics
+
+![Image](../images/chat-quantum-worksheet.png)
 #### Top 3
 ##### Driving Architectural Characteristics
 1. Responsiveness
