@@ -36,6 +36,9 @@ We are a team of passionate software engineers & designers from product-market-f
 ## Glossary
 * NPO / NP - Both acronyms are used to refer to non-profit organizations.
 * NFR - Non-functional requirement
+* UI - User Interface
+* UX - User Experience
+* IA - [Information Architecture](https://en.wikipedia.org/wiki/Information_architecture)
 
 <a name="prelude"></a>
 ## Prelude
@@ -62,32 +65,52 @@ The following analyses follow the format:
 
 
 1. *The Platform must establish a way to incentivize engagement such as sharing of resources, collaboration, networking, facilitating introductions, and partnerships*
-   * NPOs or candidates can be rewarded with points for various activities they perform using the system. Google places is a good example which rewards with points on posting reviews, images, etc. on places. And an individual is entitled to certain benefits upon accumulating certain no. of points. The platform could also use something similar to reward points for the NPOs and candidates.                                      
+   * NPOs or candidates can be rewarded with points for various activities they perform using the system. [Google Maps Local Guides](https://maps.google.com/localguides/) is a good example which rewards with points on posting reviews, images, etc. on places. The Spotlight platform could also use something similar to award points to the NPOs and candidates on engagement.                                      
    * NFRs
      * **Configurability** - The platform must be configurable to introduce or update new incentive rules to reward engagement.
 2. *The Platform must categorize/tag nonprofit support services to match candidate needs identified in the onboarding assessment to include but not limited to Resume Writing Services, Interview Prep, Free Business Attire, Apprenticeship Program Registration, Training Program Registration, College & University Registration, Free Grocery & Meal Services, Discounted Rent & Housing Services, Daycare/Child Care Services, Mentorship/Career Advocate Services*
-   * Allow tagging and indexing of categories on NPO support services and candidate profile **Tagging** and **indexing** of resources based on services for faster searches.		
+   * Allow tagging categories on NPO, NPO offerings, candidate profiles, etc.
+   * NFRs
+     * **Performance** - The platform must be performant to provide faster matches between NPO offerings and Candidates and provide relevant recommendations. Indexing categories on various data entities may help in this regard.
 3. *End-Use Ease of Use is a hard requirement*
-   * The underrepresented demographics may not be tech-savvy. So, **Usability** of the platform and the app becomes important.
+   * The underrepresented demographics may not be tech-savvy. So, the Spotlight App's IA should be simple and intuitive to improve engagement. The App could have tour guides, FAQs, etc. (Long-term) The Platform could push recommendations and notifications to enable the user to take the next step on the app.
+   * To enable NPOs to integrate with the Spotlight platform, platform needs to have well defined and documented APIs.
+   * NFRs
+     * **Usability**
+     * **Interoperability**
 4. *Tracking candidate progress is a hard requirement.*
-   * Warrants **data integrity** in the system to accurately show candidate progress.
+   * Warrants data integrity in the system to accurately show candidate progress as and when his course progress is updated.
+   * For NPOs which have their own APIs for their offerings, data must be regularly pulled from the APIs to update candidate progress in the platform.
+   * NFRs
+     * **Workflow**
+     * **Data Integrity**
 5. *Tracking engagement is a hard requirement*
+   * Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system. This will also help to incentivize engagement. 
+   * NFRs
+     * **Workflow**
+     * **Data Integrity**
 6. *The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests.*
    * Recommendations based on the candidate's profile, interests and activity in the system.
 7. *The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads.*
-   * Since the files are essential for any NGO to operate, they must be **reliably** stored and **recoverable** (in case of disaster).
+   * Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).
+   * NFRs
+     * **Recoverability**
+     * **Fault Tolerance**
 8. *Each offering must support a certain list of properties (defined by the platform), such as name, organization description, website, unique identifier (assigned by the Administrators) and other identification information.*
-9.  *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
-    * System should be **performant** to process reports quickly.
-    * System should **reliably** store user activity and data coming from various services in the platform.
-    * Big data store to train models for better predictions. Consider **OLAP solution** to perform analytics.
+9. *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
+    * System should reliably store user activity and data coming from various services in the platform.
+    * Big data store to train models for better predictions on recommendations. Consider **OLAP solution** to perform analytics.
 10. *Reminder to think critically about the nonprofit and candidate experience, anticipate these users needs while developing the use case and user stories. Consider what can offer these users maximum value to fulfill the intent of logging on the app.*
     *  Apply design thinking to understand user personas and their needs. Come up with a user experience that is intuitive.
+    *  NFRs
+       *  **Usability**
 
+### Further Analysis and Considerations
+The team researched about 
 
 <a name="user-experience"></a>
 ## User experience
-The team went through a design thinking exercise to understand the Candidate and NP user profiles, and empathize needs and pain points. The following golden paths were derived
+The team went through a design thinking exercise to understand the Candidate and NP user profiles, and empathize their needs and pain points. The following golden paths were considered:
 
 [Design artifacts](./design/design-artifacts.md)
 
@@ -116,7 +139,7 @@ Going by the no. of NPOs and under represented demographics mentioned in [Prelud
 * PLATFORM_ADMIN (associated with the Spotlight Platform)
 * COMMUNITY_LEADER (associated with the Spotlight Platform)
 * NP_ADMIN (associated with the NPO)
-* NP_USER (associated with the NPO)
+* NP_USER (associated with the NPO) - Can be NPO offering's mentor 
 * CANDIDATE
 
 <a name="identifying-architectural-quanta"></a>
