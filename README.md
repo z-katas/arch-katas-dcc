@@ -1,6 +1,7 @@
 # Spotlight Platform
 
 ## Table of Contents
+* [About the team](#about-the-team)
 * [Glossary](#glossary)  
 * [Prelude](#prelude)  
 * [Requirement Analysis](#requirement-analysis)
@@ -19,6 +20,17 @@
 * [Call Flow diagrams](#call-flow-diagrams)
 * [Engineering Practices](#engineering-practices)
 * [Resources](#resources)
+
+<a name="about-the-team"></a>
+## About the team
+
+We are a team of passionate software engineers & designers from product-market-fit studio [Zemoso](https://www.zemosolabs.com/).
+
+* [Ashish Kumar Das](https://www.linkedin.com/in/das-ashish/) 
+* [Naveen Chevuru](https://www.linkedin.com/in/naveenchevuru/) 
+* [Pranava Shashank P](https://www.linkedin.com/in/pranavashashank/) 
+* [Sai Venkatesh Vemuri](https://www.linkedin.com/in/saivenkateshvemuri/) 
+* [Vasanth Kumar](https://www.linkedin.com/in/vasanth-kumar-22b9a4109/) 
 
 <a name="glossary"></a>
 ## Glossary
