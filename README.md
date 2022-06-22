@@ -13,10 +13,10 @@
 * [Identifying Architectural Quanta](#identifying-architectural-quanta)
   * [Quanta](#quanta)
   * [Other Services](#other-services)
-* [Platform Roadmap](#platform-roadmap)
 * [Overall Architecture](#overall-architecture)
   * [Logical View](#logical-view)
   * [Component View](#component-view)
+* [Platform Roadmap](#platform-roadmap)
 * [Call Flow diagrams](#call-flow-diagrams)
 * [Engineering Practices](#engineering-practices)
 * [Resources](#resources)
@@ -36,9 +36,12 @@ We are a team of passionate software engineers & designers from product-market-f
 ## Glossary
 * NPO / NP - Both acronyms are used to refer to non-profit organizations.
 * NFR - Non-functional requirement
+* MVP - Minimum Viable Product
+* PII - Personal Identifiable Information
 * UI - User Interface
 * UX - User Experience
 * IA - [Information Architecture](https://en.wikipedia.org/wiki/Information_architecture)
+* The team - Pegasuz team
 
 <a name="prelude"></a>
 ## Prelude
@@ -105,8 +108,35 @@ The following analyses follow the format:
     *  NFRs
        *  **Usability**
 
+
 ### Further Analysis and Considerations
-The team researched about 
+#### Green Field Project
+There are several factors which affect the success of any new business or green field project.
+* Viability of the idea - Are there any buyers for the idea?
+* Funding - Are there any investors for the idea? 
+* Time - An idea may be viable but it may take a long time to develop / implement. And, an idea which is viable today may not be that attractive after certain period of time.
+
+Also, _Why should the business invest to build a fortress when it is not sure if anyone would be staying in it or using it._
+
+Shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should be in such a way that it can evolve with the growth in the business.
+
+**NFRs**
+* **Feasibility**
+* **Evolutionary**
+
+#### Funding
+The team researched about NPOs, 501 (c3), underrepresented demographics in the US. It was found that fund raising has been difficult during COVID times ([Source](https://morweb.org/post/5-challenges-facing-nonprofits-in-2021)) due to limited in-person fundraising opportunities. 
+
+However, there were also articles stating that the Americans are generous ([Source](https://independentsector.org/about/the-charitable-sector/)) and donate to non-profits if their vision is sticky. Also, there are several grants for NPOs to raise money without taking out traditional business loans ([Source](https://www.fundera.com/blog/grants-for-nonprofits)). So, funding should not be a problem, at least in the long-term, if the Spotlight platform markets their idea and MVP faster. 
+
+**NFRs**
+* **Feasibility**
+
+#### Security
+Sensitive data stored in the system includes - Candidate career profiles, PII (email, phone, address, ethnicity, SSN, etc.). 
+As per [GDPR](https://gdpr.eu/right-to-be-forgotten/), the system should be able to erase the PII if a user wants to be forgotten. 
+
+Consider not leaving footprints of PII in various services and logs of the system, which might make it harder to erase the PII. Use just one place where the data can be stored and retrieved. Ephemeral storages, such as cache, may be used for faster retrievals but should have mechanisms in place to erase the data.
 
 <a name="user-experience"></a>
 ## User experience
@@ -170,20 +200,27 @@ Quanta identification helps in defining different parts of the platform and the 
 * [BFF](./other-services/bff-service.md)
 
 
+<a name="overall-architecture"></a>
+## Overall Architecture
+
+<a name="logical-view"></a>
+### Logical View
+![Image](./diagrams/logical-arch/spotlight-logical-architecture.jpg)
+[View as pdf](./diagrams/logical-arch/spotlight-logical-architecture.pdf)
+
+<a name="component-view"></a>
+### Component View
+![Image](./diagrams/component/spotlight-component-diagram.jpg)
+
+[View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
+
+[For better navigation on the image, use this miro board](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764526827413301&cot=14)
+
 <a name="platform-roadmap"></a>
 ## Platform Roadmap
-There are several factors which affect the success of any new business or green field project.
-* Viability of the idea - Are there any buyers for the idea?
-* Funding - Are there any investors for the idea? 
-* Time - An idea may be viable but it may take a long time to develop. And an idea which is viable today may not be that attractive after certain period of time.
-
-Also, _Why should the business invest to build a fortress when it is not sure if anyone would be staying in it or using it._
-
-
-Shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should be in such a way that it can **evolve** with the growth in the business.
 
 ### MVP
-The MVP is envisioned to bring out the unique value proposition of the platform and solve the key business problem / pain points. It should be sufficient for the business to get market feedback and pivot.
+The MVP is envisioned to bring out the unique value proposition of the platform and solve the key business problem / pain points. It should be sufficient for the business to get market feedback and pivot, if needed.
 
 Areas to be addressed:
 * Base platform infrastructure
@@ -203,22 +240,6 @@ Areas to be addressed:
 * Reports quantum - Advanced predictive analytics
 * Recommendations quantum - with model training
 * NPO Integrations
-
-<a name="overall-architecture"></a>
-## Overall Architecture
-
-<a name="logical-view"></a>
-### Logical View
-![Image](./diagrams/logical-arch/spotlight-logical-architecture.jpg)
-[View as pdf](./diagrams/logical-arch/spotlight-logical-architecture.pdf)
-
-<a name="component-view"></a>
-### Component View
-![Image](./diagrams/component/spotlight-component-diagram.jpg)
-
-[View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
-
-[For better navigation on the image, use this miro board](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764526827413301&cot=14)
 
 <a name="call-flow-diagrams"></a>
 ### Call Flow diagrams
