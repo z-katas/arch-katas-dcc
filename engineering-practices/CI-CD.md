@@ -1,6 +1,6 @@
 # CICD practices
 
-Continuous integration and continuous delivery must be an integral part of engineering culture. 
+Continuous integration and continuous deployment must be an integral part of engineering culture. 
 
 
 ![alt text](../images/cicd.png) 
