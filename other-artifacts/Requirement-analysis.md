@@ -1,6 +1,3 @@
-<a name="requirement-analysis"></a>
-
-
 ## Requirement Analysis
 The following analyses follow the format:
 *Given business requirement*
@@ -14,7 +11,7 @@ The following analyses follow the format:
 1. *The Platform must establish a way to incentivize engagement such as sharing of resources, collaboration, networking, facilitating introductions, and partnerships*
    * NPOs or candidates can be rewarded with points for various activities they perform using the system. [Google Maps Local Guides](https://maps.google.com/localguides/) is a good example which rewards with points on posting reviews, images, etc. on places. The Spotlight platform could also use something similar to award points to the NPOs and candidates on engagement.                                      
    * NFRs
-     * **Configurability** - The platform must be configurable to introduce or update new incentive rules to reward engagement.
+     * **Configurability** - The platform must be configurable to introduce or update new incentive rules with minimum or no engineering effort to reward engagement.
 2. *The Platform must categorize/tag nonprofit support services to match candidate needs identified in the onboarding assessment to include but not limited to Resume Writing Services, Interview Prep, Free Business Attire, Apprenticeship Program Registration, Training Program Registration, College & University Registration, Free Grocery & Meal Services, Discounted Rent & Housing Services, Daycare/Child Care Services, Mentorship/Career Advocate Services*
    * Allow tagging categories on NPO, NPO offerings, candidate profiles, etc.
    * NFRs
@@ -26,28 +23,28 @@ The following analyses follow the format:
      * **Usability**
      * **Interoperability**
 4. *Tracking candidate progress is a hard requirement.*
-   * Warrants data integrity in the system to accurately show candidate progress as and when his course progress is updated.
-   * For NPOs which have their own APIs for their offerings, data must be regularly pulled from the APIs to update candidate progress in the platform.
+   * For NPOs which have their own APIs for their offerings, data must be regularly pulled from their APIs to update candidate progress and particular NPO offerings in the platform.
+   * This warrants data integrity in the system to accurately show candidate progress as and when his course progress is updated.
    * NFRs
      * **Workflow**
      * **Data Integrity**
-5. *Tracking engagement is a hard requirement*
+6. *Tracking engagement is a hard requirement*
    * Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system. This will also help to incentivize engagement. 
    * NFRs
      * **Workflow**
      * **Data Integrity**
-6. *The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests.*
+7. *The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests.*
    * Recommendations based on the candidate's profile, interests and activity in the system.
-7. *The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads.*
+8. *The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads.*
    * Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).
    * NFRs
      * **Recoverability**
      * **Fault Tolerance**
-8. *Each offering must support a certain list of properties (defined by the platform), such as name, organization description, website, unique identifier (assigned by the Administrators) and other identification information.*
-9. *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
+9. *Each offering must support a certain list of properties (defined by the platform), such as name, organization description, website, unique identifier (assigned by the Administrators) and other identification information.*
+10. *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
     * System should reliably store user activity and data coming from various services in the platform.
     * Big data store to train models for better predictions on recommendations. Consider **OLAP solution** to perform analytics.
-10. *Reminder to think critically about the nonprofit and candidate experience, anticipate these users needs while developing the use case and user stories. Consider what can offer these users maximum value to fulfill the intent of logging on the app.*
+11. *Reminder to think critically about the nonprofit and candidate experience, anticipate these users needs while developing the use case and user stories. Consider what can offer these users maximum value to fulfill the intent of logging on the app.*
     *  Apply design thinking to understand user personas and their needs. Come up with a user experience that is intuitive.
     *  NFRs
        *  **Usability**
@@ -61,7 +58,7 @@ There are several factors which affect the success of any new business or green 
 
 Also, _Why should the business invest to build a fortress when it is not sure if anyone would be staying in it or using it._
 
-Shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should be in such a way that it can evolve with the growth in the business.
+So, shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should be in such a way that it can evolve with the growth in the business.
 
 **NFRs**
 * **Feasibility**
@@ -80,3 +77,14 @@ Sensitive data stored in the system includes - Candidate career profiles, PII (e
 As per [GDPR](https://gdpr.eu/right-to-be-forgotten/), the system should be able to erase the PII if a user wants to be forgotten. 
 
 Consider not leaving footprints of PII in various services and logs of the system, which might make it harder to erase the PII. Use just one place where the data can be stored and retrieved. Ephemeral storages, such as cache, may be used for faster retrievals but should have mechanisms in place to erase the data
+
+
+#### No. of users and Regions
+
+Going by the no. of NPOs ([Source](https://independentsector.org/about/the-charitable-sector/)) and under-represented demographics ([Source](https://www.governing.com/archive/gov-nonprofits.html)), there is a tremendous potential for active collaboration and could be an exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we consider 0.5% adoption in 1~2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.
+
+To support NPOs and demographics in multiple regions, consider multi-zone deployment in the longer-term, for improving availability.
+
+**NFRs**
+* Scalability
+* Availability

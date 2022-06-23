@@ -1,34 +1,34 @@
 # Spotlight Platform
 
 ## Table of Contents
-* [About the team](#about-the-team)
-* [Glossary](#glossary)  
-* [Prelude](#prelude)  
-* [Requirement Analysis](#requirement-analysis)
-* [User Experience](#user-experience)  
-  * [Candidate Flow](#candidate-flow)
-  * [Non Profit Flow](#non-profit-flow)
-* [Assumptions](#assumptions)
-* [User Roles](#user-roles)
-* [Identifying Architectural Quanta](#identifying-architectural-quanta)
-  * [Quanta](#quanta)
-  * [Other Services](#other-services)
-* [Overall Architecture](#overall-architecture)
-  * [Logical View](#logical-view)
-  * [Component View](#component-view)
-* [Platform Roadmap](#platform-roadmap)
-* [Call Flow diagrams](#call-flow-diagrams)
-* [Engineering Practices](#engineering-practices)
-* [Resources](#resources)
+  * [About the team](#about-the-team)
+  * [Glossary](#glossary)
+  * [Prelude](#prelude)
+  * [Non-functional requirements](#non-functional-requirements)
+  * [User Experience](#user-experience)  
+    * [Candidate Flow](#candidate-flow)
+    * [Non Profit Flow](#non-profit-flow)
+  * [Assumptions](#assumptions)
+  * [User Roles](#user-roles)
+  * [Identifying Architectural Quanta](#identifying-architectural-quanta)
+    * [Quanta](#quanta)
+    * [Other Services](#other-services)
+  * [Overall Architecture](#overall-architecture)
+    * [Logical View](#logical-view)
+    * [Component View](#component-view)
+  * [Platform Road map](#platform-roadmap)
+  * [Call Flow diagrams](#call-flow-diagrams)
+  * [Engineering Practices](#engineering-practices)
+  * [Resources](#resources)
 
 <a name="about-the-team"></a>
 ## About the team
 
-We are a team of passionate software engineers & designers from product-market-fit studio [Zemoso](https://www.zemosolabs.com/).
+We are a team of passionate group of software engineers & product managers from an innovation as a service organization [Zemoso](https://www.zemosolabs.com/).
 
-* [Ashish Kumar Das](https://www.linkedin.com/in/das-ashish/) 
-* [Naveen Chevuru](https://www.linkedin.com/in/naveenchevuru/) 
 * [Pranava Shashank P](https://www.linkedin.com/in/pranavashashank/) 
+* [Naveen Chevuru](https://www.linkedin.com/in/naveenchevuru/)
+* [Ashish Kumar Das](https://www.linkedin.com/in/das-ashish/) 
 * [Sai Venkatesh Vemuri](https://www.linkedin.com/in/saivenkateshvemuri/) 
 * [Vasanth Kumar](https://www.linkedin.com/in/vasanth-kumar-22b9a4109/) 
 
@@ -56,23 +56,36 @@ Diversity Cyber Council has come forward with a vision to enhance inclusion and 
 ### Goal of the platform
 To establish a sustainable and diverse talent pipeline that extends career equity to underrepresented demographics by providing access to competent training programs that lead to direct employment opportunities.
 
-
+<a name="non-functional-requirements"></a>
 ## Non-Functional Requirements
 
-After the [analysis of business requirements and ideas](other-arifacts/Requirement-analysis.md) the team has come up with the below NFRs for the system
+After the [analysis of business requirements and ideas](./other-artifacts/requirement-analysis.md), the team has come up with the below NFRs for the system
 
 | NFR | Relevance | 
 | -- | -- | 
-| Configurability | To introduce or update new incentive rules and rewards systems with no to minimal engineering effort
+| Configurability | To introduce or update new incentive rules and rewards systems with no or minimal engineering effort |
 | Performance | The platform must be performant to provide faster matches between NPO offerings and Candidates and provide relevant recommendations. Indexing categories on various data entities may help in this regard.|
 | Usability| The underrepresented demographics may not be tech-savvy. So, the Spotlight App's Information Architecture should be simple and intuitive to improve engagement. |
 | Interoperability| To enable NPOs to integrate with the Spotlight platform, platform needs to have well defined and documented APIs.|
-|Workflow | For NPOs which have their own APIs for their offerings, data must be regularly pulled from the APIs to update candidate progress in the platform.|
-| Data Integrity|Warrants data integrity in the system to accurately show candidate progress as and when his course progress is updated. |
+|Workflow | For NPOs which have their own APIs for their offerings, data must be regularly pulled from their APIs to update candidate progress and particular NPO offerings in the platform. Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system.|
+| Data Integrity| To accurately show candidate progress as and when his course progress is updated in NPO systems. |
 |Recoverability & Fault tolerance | Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).  | 
-| Reporting & analytics| System should reliably store user activity and data coming from various services in the platform. | 
-|Feasibility & Evolutionary | Shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should be in such a way that it can evolve with the growth in the business.|
-| Security & Privacy | Sensitive data stored in the system includes - Candidate career profiles, PII (email, phone, address, ethnicity, SSN, etc.). System should allow users to erase all their data permanently at any point in time..
+|Feasibility | Green field projects need shorter iterations to get market feedback. Also, raising funds has been difficult during COVID times.|
+| Evolutionary | Green field projects need shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should allow faster introduction or removal of features|
+| Security | Sensitive data stored in the system includes - Candidate career profiles, PII (email, phone, address, ethnicity, SSN, etc.). As per [GDPR](https://gdpr.eu/right-to-be-forgotten/), the system should be able to erase the PII if a user wants to be forgotten. |
+| Scalability | To support exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we consider 0.5% adoption in 1-2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.|
+| Availability | To support NPOs and demographics in multiple regions, consider multi-zone deployment in the longer-term|
+
+### Driving NFRs
+* Workflow
+* Evolutionary
+* Feasibility
+* Scalability
+* Usability
+* Availability
+* Data integrity
+
+Since the proposal is a platform, the platform could be composed of several architectural quanta, each with its own architectural style. So, we are not picking a style yet.
 
 <a name="user-experience"></a>
 ## User experience
@@ -96,9 +109,23 @@ https://www.loom.com/share/2f3be1ded8bd438e958ffd8cc9595e83
 
 <a name="assumptions"></a>
 ## Assumptions
-#### Capacity planning
+### Capacity planning
 Going by the no. of NPOs and under represented demographics mentioned in [Prelude](#prelude), we decided to design the system for the following capacity:
-![Image](images/capacity-planning.jpg)
+
+| Time        | Candidates  | NPOs       | Locations          |
+| ----------- | ----------- | ---------- | ------------------ |
+| 3 months    | 5k-10k      | 500-1k     |  1 State - 1 City  |
+| 6 months    | 10k - 50k   | 1k - 5k    |  1 State - 1 City  |
+| 1 year      | 50k - 100k  | 5k - 20k   |  US 2-3 States (Region)  |
+| 2 years     | ~ 500k      | 25k - 50k  |  US Multiple States (Regions)  |
+| 3 years     | ~1 mil      | ~ 100k     |  US Multiple States (Regions)  |
+
+### Availability
+Since Spotlight is not a public safety or mission critical (dealing with lives or money directly) platform, 5 nines (99.999% - 5.2 minutes of downtime per year) is unreasonable and 4 nines would also be an overkill (99.99% - 52.5 minutes of downtime per year). 
+
+So, we decided to design the system for an availability between 3 nines (for quanta which do not have synchronous dependencies, like reporting and analytics) and 4 nines (for quanta which have synchronous dependencies, like notifications).
+
+[Reference](https://aws.amazon.com/blogs/publicsector/achieving-five-nines-cloud-justice-public-safety/#:~:text=The%20accepted%20availability%20standard%20for,system%20must%20work%20seamlessly%20together.)
 
 <a name="user-roles"></a>
 ## User Roles
