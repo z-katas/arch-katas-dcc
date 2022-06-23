@@ -28,23 +28,23 @@ The following analyses follow the format:
    * NFRs
      * **Workflow**
      * **Data Integrity**
-6. *Tracking engagement is a hard requirement*
+5. *Tracking engagement is a hard requirement*
    * Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system. This will also help to incentivize engagement. 
    * NFRs
      * **Workflow**
      * **Data Integrity**
-7. *The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests.*
+6. *The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests.*
    * Recommendations based on the candidate's profile, interests and activity in the system.
-8. *The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads.*
+7. *The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads.*
    * Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).
    * NFRs
      * **Recoverability**
      * **Fault Tolerance**
-9. *Each offering must support a certain list of properties (defined by the platform), such as name, organization description, website, unique identifier (assigned by the Administrators) and other identification information.*
-10. *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
+8. *Each offering must support a certain list of properties (defined by the platform), such as name, organization description, website, unique identifier (assigned by the Administrators) and other identification information.*
+9. *The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators.*
     * System should reliably store user activity and data coming from various services in the platform.
     * Big data store to train models for better predictions on recommendations. Consider **OLAP solution** to perform analytics.
-11. *Reminder to think critically about the nonprofit and candidate experience, anticipate these users needs while developing the use case and user stories. Consider what can offer these users maximum value to fulfill the intent of logging on the app.*
+10. *Reminder to think critically about the nonprofit and candidate experience, anticipate these users needs while developing the use case and user stories. Consider what can offer these users maximum value to fulfill the intent of logging on the app.*
     *  Apply design thinking to understand user personas and their needs. Come up with a user experience that is intuitive.
     *  NFRs
        *  **Usability**
@@ -81,10 +81,29 @@ Consider not leaving footprints of PII in various services and logs of the syste
 
 #### No. of users and Regions
 
-Going by the no. of NPOs ([Source](https://independentsector.org/about/the-charitable-sector/)) and under-represented demographics ([Source](https://www.governing.com/archive/gov-nonprofits.html)), there is a tremendous potential for active collaboration and could be an exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we consider 0.5% adoption in 1~2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.
+Going by the no. of NPOs ([Source](https://independentsector.org/about/the-charitable-sector/)) and under-represented demographics ([Source](https://www.governing.com/archive/gov-nonprofits.html)), there is a tremendous potential for active collaboration and could be an exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we assume 0.5% adoption in 1~2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.
 
 To support NPOs and demographics in multiple regions, consider multi-zone deployment in the longer-term, for improving availability.
 
 **NFRs**
 * Scalability
 * Availability
+
+
+### Summary 
+
+
+| Given Requirements | Analysis | NFRs | 
+| ------------------ | -------- | ---- |
+| The Platform must establish a way to incentivize engagement such as sharing of resources, collaboration, networking, facilitating introductions, and partnerships| To introduce or update new incentive rules and rewards systems with no or minimal engineering effort | Configurability |
+| The Platform must categorize/tag nonprofit support services to match candidate needs identified in the onboarding assessment | The platform must be performant to provide faster matches between NPO offerings and Candidates and provide relevant recommendations. Indexing categories on various data entities may help in this regard.| Performance |
+| End-Use Ease of Use is a hard requirement | The underrepresented demographics may not be tech-savvy. So, the Spotlight App's Information Architecture should be simple and intuitive to improve engagement. To enable NPOs to integrate with the Spotlight platform, platform needs to have well defined and documented APIs. | Usability, Interoperability |
+| Tracking candidate progress is a hard requirement. | For NPOs which have their own APIs for their offerings, data must be regularly pulled from their APIs to update candidate progress and particular NPO offerings in the platform. This warrants data integrity in the system to accurately show candidate progress as and when his course progress is updated.| Workflow, Data Integrity |
+| Tracking engagement is a hard requirement | Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system. This will also help to incentivize engagement. | Workflow, Data Integrity | 
+| The Platform must provide a way to allow Non-Profits to publicize offerings to the platform that can provide some level of automatic matching for Candidate requests. | Recommendations based on the candidate's profile, interests and activity in the system. | NA |
+| The Platform allows offerings to contain rich text, links, and downloadable readable content such as PDFs, but no other downloads. | Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).  | Recoverability, Fault tolerance |
+| The Platform must provide both operational reports (number of candidate matches / period, number of offerings / region, and so on) and analytical reports (projections of future desirable career paths, Offering gaps in a region based on demand, and so on) for use by Administrators. | System should reliably store user activity and data coming from various services in the platform. Big data store to train models for better predictions on recommendations. Consider **OLAP solution** to perform analytics.| NA | 
+| Green Field Project | Green field projects need shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should allow faster introduction or removal of features. Also, raising funds has been difficult during COVID times.| Evolutionary, Feasibility | 
+| [Derived] Sensitive data stored in the system includes - Candidate career profiles, PII (email, phone, address, ethnicity, SSN, etc.). | As per [GDPR](https://gdpr.eu/right-to-be-forgotten/), the system should be able to erase the PII if a user wants to be forgotten. | Security | 
+| [Derived] No. of users | To support exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we assume 0.5% adoption (Reference - [NPOs](https://independentsector.org/about/the-charitable-sector/) and [Under-represented demographics](https://www.governing.com/archive/gov-nonprofits.html)) in 1-2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.| Scalability |
+| [Derived] Multi region support | To support NPOs and demographics in multiple regions, consider multi-zone deployment in the longer-term| Availability | 
