@@ -5,6 +5,7 @@
   * [Glossary](#glossary)
   * [Prelude](#prelude)
   * [Non-functional requirements](#non-functional-requirements)
+  * [Overall Platform Context](#context-diagram)
   * [User Experience](#user-experience)  
     * [Candidate Flow](#candidate-flow)
     * [Non Profit Flow](#non-profit-flow)
@@ -86,6 +87,13 @@ After the [analysis of business requirements and ideas](./other-artifacts/requir
 * Data integrity
 
 Since the proposal is a platform, the platform could be composed of several architectural quanta, each with its own architectural style. So, we are not picking a style yet.
+
+<a name="context-diagram"></a>
+## Overall Platform Context
+
+![Image](./diagrams/context/spotlight-context-diagram.jpg)
+
+[For better navigation on the content, use this miro frame](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764528112682339&cot=14)
 
 <a name="user-experience"></a>
 ## User experience
@@ -172,12 +180,12 @@ Quanta identification helps in defining different parts of the platform and the 
 [View as pdf](./diagrams/logical-arch/spotlight-logical-architecture.pdf)
 
 <a name="component-view"></a>
-### Component View
+### Physical View
 ![Image](./diagrams/component/spotlight-component-diagram.jpg)
 
 [View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
 
-[For better navigation on the image, use this miro board](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764526827413301&cot=14)
+[For better navigation on the content, use this miro frame](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764528112682338&cot=14)
 
 <a name="platform-roadmap"></a>
 ## Platform Roadmap
