@@ -60,31 +60,15 @@ To establish a sustainable and diverse talent pipeline that extends career equit
 <a name="non-functional-requirements"></a>
 ## Non-Functional Requirements
 
-After the [analysis of business requirements and ideas](./other-artifacts/requirement-analysis.md), the team has come up with the below NFRs for the system
+After the **[detailed analysis of business requirements](./other-artifacts/Requirement-analysis.md)**, the team has come up with the below NFRs for the platform
 
-| NFR | Relevance | 
-| -- | -- | 
-| Configurability | To introduce or update new incentive rules and rewards systems with no or minimal engineering effort |
-| Performance | The platform must be performant to provide faster matches between NPO offerings and Candidates and provide relevant recommendations. Indexing categories on various data entities may help in this regard.|
-| Usability| The underrepresented demographics may not be tech-savvy. So, the Spotlight App's Information Architecture should be simple and intuitive to improve engagement. |
-| Interoperability| To enable NPOs to integrate with the Spotlight platform, platform needs to have well defined and documented APIs.|
-|Workflow | For NPOs which have their own APIs for their offerings, data must be regularly pulled from their APIs to update candidate progress and particular NPO offerings in the platform. Any activity (attending meetings, posts, subscribing to the offerings, etc.) performed by the users must be tracked and recorded in the system.|
-| Data Integrity| To accurately show candidate progress as and when his course progress is updated in NPO systems. |
-|Recoverability & Fault tolerance | Since the files/documents are essential for any NGO to operate, they must be safely stored and recoverable (in case of disaster).  | 
-|Feasibility | Green field projects need shorter iterations to get market feedback. Also, raising funds has been difficult during COVID times.|
-| Evolutionary | Green field projects need shorter iterations to get market feedback and pivoting, if necessary, becomes important. So, the architecture should allow faster introduction or removal of features|
-| Security | Sensitive data stored in the system includes - Candidate career profiles, PII (email, phone, address, ethnicity, SSN, etc.). As per [GDPR](https://gdpr.eu/right-to-be-forgotten/), the system should be able to erase the PII if a user wants to be forgotten. |
-| Scalability | To support exponential growth in no. of users and NPOs in the platform once the idea is viral. Even if we consider 0.5% adoption in 1-2 years, there could be 100k NPOs and 500k under-represented folks using the platform, which is huge.|
-| Availability | To support NPOs and demographics in multiple regions, consider multi-zone deployment in the longer-term|
-
-### Driving NFRs
 * Workflow
 * Evolutionary
 * Feasibility
 * Scalability
 * Usability
 * Availability
-* Data integrity
+* Data Integrity
 
 Since the proposal is a platform, the platform could be composed of several architectural quanta, each with its own architectural style. So, we are not picking a style yet.
 
