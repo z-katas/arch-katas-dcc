@@ -6,6 +6,8 @@
 
 Having in-app chat support on the platform is a great way to engage with the community. Also, a candidate doesn't have to leave the app to engage with the mentors (say, over email).
 
+However, building an in-house chat solution 
+
 ### Responsibilities
 
 1. Initiate a new conversation with users.
@@ -21,19 +23,14 @@ Having in-app chat support on the platform is a great way to engage with the com
 #### Top 3
 
 ##### Driving Architectural Characteristics
-
-1. Responsiveness
-   The messages have to be sent and received with minimal latency
-2. Data integrity
-   Correctness of messages and intended recipients.
-3. Feasibility (cost + time)
+* **Responsiveness** - The messages have to be sent and received with minimal latency
+* **Data integrity** - Correctness of messages and intended recipients.
+* **Adaptability** - The chat service acts like a facade to the 3rd party chat provider.
 
 ##### Characteristics that we do not need as we offloaded to 3rd party vendors
-
-1. Security
-   Security for messages during storage and transit.
-2. Scalability and Availability  
-   Service highly depends on third party service for scale and uptime
+* **Security** - Security for messages during storage and transit.
+* **Scalability** - Service highly depends on third party service for scale
+* **Availability** - Service highly depends on third party service for uptime
 
 ### Architectural Style Preferred
 
@@ -41,6 +38,4 @@ Having in-app chat support on the platform is a great way to engage with the com
 Microservices
 
 ### Tradeoffs - Mitigation Strategies
-
-- Building a highly responsive chat service within the platform is a challenge and time consuming. Also, it is not the core value proposition of the
-  - Go for an external chat provider
+* Building a highly responsive chat service within the platform is a challenge and time consuming. Also, it is not the core value proposition of the platform. So, go for an external chat provider
