@@ -11,7 +11,7 @@
 
 ### Driving Architectural Characteristics
 
-![Image](../images/notification-quantum-worksheet.png)
+![Image](../images/notification-quantum-worksheet.jpg)
 #### Top 3
 ##### Driving Architectural Characteristics
 1. Concurrency
@@ -30,6 +30,8 @@
 
 ### Architectural Style Preferred
 Microservices
+
+![Image](../images/notification-quantum-arch-characteristics.jpg)
 
 ### Relevant ADRs
 
