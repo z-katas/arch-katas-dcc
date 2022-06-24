@@ -172,29 +172,35 @@ Quanta identification helps in defining different parts of the platform and the 
 [For better navigation on the content, use this miro frame](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764528112682338&cot=14)
 
 <a name="platform-roadmap"></a>
-## Platform Roadmap
+## Platform Road map
 
 ### MVP
 The MVP is envisioned to bring out the unique value proposition of the platform and solve the key business problem / pain points. It should be sufficient for the business to get market feedback and pivot, if needed.
 
-Areas to be addressed:
-* Base platform infrastructure
-  * CI / CD pipelines with continuous delivery.
-  * Logging
-  * Monitoring
-* Candidate - NPO quantum
-* Reports quantum - Without Analytics
-* Notification quantum
-* Recommendations quantum - Simple, without model training
-* Meetings quantum
-* Document quantum
-* Chat quantum
+Areas to be addressed (In the order of priority):
+
+1. NPO - Candidate quantum (Modular Monolith)
+2. Base platform infrastructure
+   * CI / CD pipelines with continuous delivery.
+   * Logging
+   * Monitoring
+3. BFF Service
+4. Document quantum
+5. Chat quantum
+6. Notification quantum
+7. Meetings quantum
+8. Reports quantum - Without Analytics
+9. Recommendations quantum - Simple, without model training
+
+
 
 ### Long Term
 Areas to be addressed:
+* NPO - Candidate quantum (migrate to Microservices + Event Driven)
 * Reports quantum - Advanced predictive analytics
 * Recommendations quantum - with model training
 * NPO Integrations
+* Support Service
 
 
 <a name="engineering-practices"></a>
