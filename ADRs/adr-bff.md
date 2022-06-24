@@ -1,8 +1,8 @@
-# Title
-Backend for frontend (BFF) with Graphql
+# Backend for frontend (BFF) with Graphql
+Date: 2022-06-23
 
 ## Status
-proposed 
+Accepted 
 
 ## Context
 Following the [API standard decision](./adr-api-standard.md), the Spotlight apps would require to consume graphql APIs, but external consumer services would prefer Rest APIs to integrate with the platform. It is an infrastructure overhead for all the microservices to supports both the standards initially. BFF is a service catered for frontend needs and can follow a different API standard (Graphql) from the rest of the system. 

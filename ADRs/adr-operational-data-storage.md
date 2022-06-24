@@ -1,10 +1,7 @@
-# Title
-
-Operational Data Storage
+# Operational Data Storage
 
 ## Status
-
-proposed
+Accepted
 
 ## Context
 
@@ -26,10 +23,10 @@ With the growth of Microservices, Cloud, Distributed Applications, Global Scalin
 | Write Performance Requirements | Low    | High  |
 | Cost                           | High   | Low   |
 
-![Image](../diagrams/cap-theorem.jpg)
+![Image](../images/cap-theorem.png)
 credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-choose-CA-CP-and-AP_fig1_282519669
 
-![Image](../diagrams/cap-pyramid.jpg)
+![Image](../images/cap-pyramid.png)
 credits : https://www.researchgate.net/figure/CAP-theorem-with-databases-that-choose-CA-CP-and-AP_fig1_282519669
 
 

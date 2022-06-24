@@ -2,7 +2,7 @@
 Date: 2022-06-21
 
 ## Status
-Accepted 
+Proposed 
 
 ## Context
 Deployment methods depict how a software service is deployed into a cloud or a machine to serve its users. It is an important aspect of software architecture as it impacts cost, performance, availability of the software. 

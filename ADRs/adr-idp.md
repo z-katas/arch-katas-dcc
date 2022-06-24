@@ -1,5 +1,5 @@
 # Identity Provider (IdP)
-2022-06-23
+Date: 2022-06-23
 
 ## Status
 Accepted
