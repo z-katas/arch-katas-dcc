@@ -1,7 +1,7 @@
 # Spotlight Platform
 
 ## Final Presentation
-![Video](../other-artifacts/spotlight-platform-presentation.mp4)
+![Video](./other-artifacts/spotlight-platform-team-pegasuz.mp4)
 
 https://prezi.com/v/view/QLsX6RaSORYOurrrfhnL/
 
