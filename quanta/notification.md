@@ -1,4 +1,4 @@
-## Notification
+## Notification Quantum
 ![Image](../diagrams/quanta/notifications-quanta.jpg)
 
 ### Responsibilities
@@ -14,22 +14,16 @@
 ![Image](../images/notification-quantum-worksheet.jpg)
 #### Top 3
 ##### Driving Architectural Characteristics
-1. Concurrency
-   The system needs to be concurrent enough to notify users and user groups about different subjects at the same time.
-2. Data integrity
-   Correctness or emails and notifications is highly important as they would be misleading otherwise.
-3. Availability
-   Service should be highly available so that users do not miss anything.
+1. **Scalability** - The quantum is highly scalable and can be scaled to the growing NPO + Candidate community adopting to the platform.
+2. **Extensibility** - Should be able to add new notification channel easily.
+3. **Availability** - Notifications for all the events in the system depend on this service. So this service needs to be highly available
 
 ##### Characteristics that we do not need as we offloaded to 3rd party vendors
-1. Security
-   Security around emailing service will be the responsibility of the emailing vendor.
-2. Scalability and Availability  
-   The notification provider should be highly scalable and available at the same time
+* **Security** - Security around emailing service will be the responsibility of the emailing vendor.
 
 
 ### Architectural Style Preferred
-Microservices
+Hybrid - Microservices + Event Driven
 
 ![Image](../images/notification-quantum-arch-characteristics.jpg)
 

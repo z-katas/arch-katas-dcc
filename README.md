@@ -7,8 +7,8 @@
   * [Non-functional requirements](#non-functional-requirements)
   * [Overall Platform Context](#context-diagram)
   * [User Experience](#user-experience)  
-    * [Candidate Flow](#candidate-flow)
-    * [Non Profit Flow](#non-profit-flow)
+    * [Candidate Golden Path](#candidate-flow)
+    * [NPO Golden Path](#non-profit-flow)
   * [Assumptions](#assumptions)
   * [User Roles](#user-roles)
   * [Identifying Architectural Quanta](#identifying-architectural-quanta)
@@ -25,7 +25,7 @@
 <a name="about-the-team"></a>
 ## About the team
 
-We are a team of passionate group of software engineers & product managers from an innovation as a service organization [Zemoso](https://www.zemosolabs.com/).
+We are a passionate group of software engineers & product managers from an innovation as a service organization [Zemoso](https://www.zemosolabs.com/).
 
 * [Pranava Shashank P](https://www.linkedin.com/in/pranavashashank/) 
 * [Naveen Chevuru](https://www.linkedin.com/in/naveenchevuru/)
@@ -195,18 +195,6 @@ Areas to be addressed:
 * Reports quantum - Advanced predictive analytics
 * Recommendations quantum - with model training
 * NPO Integrations
-
-<a name="call-flow-diagrams"></a>
-### Call Flow diagrams
-
-#### Course enrollment for a course callflow
-![Image](diagrams/call-flows/call-flow-course-enrollment.jpg)
-
-### Post notification call flow
-![Image](diagrams/call-flows/call-flow-post-notification.jpg)
-
-### NPO user updating an excel sheet to update candidate assignment progress callflow
-![Image](diagrams/call-flows/call-flow-candidate-assignment-progress.jpg)
 
 
 <a name="engineering-practices"></a>

@@ -1,4 +1,4 @@
-## NPO Integration [Long Term]
+## NPO Integration [Long Term] Quantum
 
 ![Image](../diagrams/quanta/np-integration-quanta.jpg)
 
@@ -7,7 +7,7 @@ The spotlight platform's requirements state that _Tracking candidate progress_ a
 What if they do have such a developed system? There are two ways to integrate such systems:
 
 1. The NPO builds a service to **push** data to a reliable stream provided by the Spotlight platform.
-   - This is straightforward and can be solved with services mentioned in the [NPO-Candidate quantum](npo-candidate.md)
+   - This is straightforward and can be solved with services and streams mentioned in the [NPO-Candidate quantum](npo-candidate.md)
 2. Or Spotlight platform pulls the information from the NPO's API
    - This requires a sophisticated system that can be built in the longer term.
 
@@ -59,7 +59,7 @@ Some of the requirements for the NPO integration:
 - **Testability**: Since this system needs to be highly configurable, a supporting framework should be bug-free.
 
 ### Architectural Style Preferred
-
+![Image](../images/np-integration-quantum-style-worksheet.jpg)
 - _Event-driven_ for enabling workflow in data ingestion into the spotlight platform and pushing data to NPO APIs
 - _Microkernal_ for introducing new NPO integrations without affecting the existing ones.
 

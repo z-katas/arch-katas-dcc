@@ -1,4 +1,4 @@
-## Chat
+## Chat Quantum
 
 ![Image](../diagrams/quanta/chat-quanta.jpg)
 
@@ -6,7 +6,7 @@
 
 Having in-app chat support on the platform is a great way to engage with the community. Also, a candidate doesn't have to leave the app to engage with the mentors (say, over email).
 
-However, building an in-house chat solution 
+However, Building a reliable chat service within the platform would take time and is not the core value proposition. (See [ADR](../ADRs/adr-build-vs-buy.md)). Recommended to use a 3rd party calendar service.
 
 ### Responsibilities
 
@@ -23,19 +23,22 @@ However, building an in-house chat solution
 #### Top 3
 
 ##### Driving Architectural Characteristics
-* **Responsiveness** - The messages have to be sent and received with minimal latency
-* **Data integrity** - Correctness of messages and intended recipients.
-* **Adaptability** - The chat service acts like a facade to the 3rd party chat provider.
+
+* **Extensibility** - Should support addition of platform specific features not provided by the 3rd party meetings provider.
+* **Abstraction** - The chat service acts like a facade to the 3rd party chat provider.
+* **Testability**
 
 ##### Characteristics that we do not need as we offloaded to 3rd party vendors
 * **Security** - Security for messages during storage and transit.
 * **Scalability** - Service highly depends on third party service for scale
 * **Availability** - Service highly depends on third party service for uptime
+* **Responsiveness** - The messages have to be sent and received with minimal latency
 
 ### Architectural Style Preferred
 
 ![Image](../images/chat-quantum-arch-characteristics.jpg)
 Microservices
 
-### Tradeoffs - Mitigation Strategies
-* Building a highly responsive chat service within the platform is a challenge and time consuming. Also, it is not the core value proposition of the platform. So, go for an external chat provider
+### Relevant ADRs
+
+- [Build vs buy](../ADRs/adr-build-vs-buy.md)

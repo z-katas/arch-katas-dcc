@@ -1,4 +1,4 @@
-# Green field projects Build vs Buy 
+# Green field projects - Build vs Buy 
 2022-06-23
 
 ## Status
