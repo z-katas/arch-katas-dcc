@@ -1,10 +1,8 @@
-# Title
-
-Identity Provider (IdP)
+# Identity Provider (IdP)
+2022-06-23
 
 ## Status
-
-proposed
+Accepted
 
 ## Context
 
