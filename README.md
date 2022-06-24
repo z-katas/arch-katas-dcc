@@ -3,7 +3,8 @@
 ## Final Presentation
 ![Video](./other-artifacts/spotlight-platform-team-pegasuz.mp4)
 
-https://prezi.com/v/view/QLsX6RaSORYOurrrfhnL/
+[Prezi Link](https://prezi.com/v/view/QLsX6RaSORYOurrrfhnL/)
+
 
 ## Table of Contents
   * [About Team PegasuZ](#about-the-team)
