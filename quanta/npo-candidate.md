@@ -24,11 +24,13 @@
 ![Image](../images/np-candidate-quantum-worksheet.jpg)
 
 #### Top 3
-* **Availability** - The components in this quantum form the core operational aspect of the platform and must be available in multiple zones across USA.
+* **Feasibility (cost & time, in MVP)** - Since it is a green field project and quick market validation of the idea is paramount. Also, initial funding may be hard to come by.
 * **Scalability** - The components in this quantum form the core operational aspect of the platform and must be scalable to accommodate the capacity planned for the system.
 * **Data integrity** - Tracking candidate progress is a hard requirement and the operational data captured by the components in this quantum used by the system for analytics and reports. So, accuracy becomes important.
+* **Availability (Post MVP)**  - The components in this quantum form the core operational aspect of the platform and must be available in multiple zones across USA.
 
 #### Other Driving Characteristics
+  
 * **Testability** - The components in this quantum hold policies and rules (such as incentive programs, registrations, mentor assignment rules, etc.) and must be testable easily.
 
 * **Interoperability** - The service APIs in this quantum would be used by external NPOs to integrate with the platform. So the API documentation becomes important.
@@ -36,6 +38,7 @@
 * **Recoverability** - The operational data captured by the components in this quantum used by the system for analytics and reports. So, it must be recoverable in case of disasters.
 
 ### Architectural Style
+![]
 Hybrid - Event Driven and Microservices
 
 ### Trade-offs - Mitigation strategies
@@ -45,3 +48,9 @@ Hybrid - Event Driven and Microservices
   * Mitigation - This trade-off may be acceptable as the system is not dealing with mission critical information (such as affecting human life / money). 
 * Having a microservices architecture may reduce the performance and reliability of the services due to network hops.  
   * Having an event-driven system internally with a reliable message queue would increase the reliability and performance of the system. 
+
+
+### Relevant ADRs
+
+- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Identity Provider](../ADRs/adr-idp.md)

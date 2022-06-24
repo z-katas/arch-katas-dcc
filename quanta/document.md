@@ -1,7 +1,7 @@
 ## Document
 
 ![Image](../diagrams/quanta/documents-quanta.jpg)
-This service stores and retrieves files. The files could be images (avatars, NPO favicons, etc.) or documents (candidate resumes, NPO offering details, reports - PDF / Spreadsheet, etc.), which are not expected to be large.
+This service stores and retrieves files. The files could be images (avatars, NPO favicons, etc.) or documents (candidate resumes, NPO offering details, reports - PDF / Spreadsheet, etc.), which are not expected to be too large. NP admin wants to engage with his/her community with the help of a post involving an image. 
 
 ### Responsibilities
 
@@ -29,5 +29,5 @@ Microservices
 
 ### Relevant ADRs
 
-- [External Document Storage](../ADRs/external-document-storage.md)
-- [Data route to storage](../ADRs/data-route-to-storage.md)
+- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Data route to storage](../ADRs/adr-upload-directly-to-document-storage.md)

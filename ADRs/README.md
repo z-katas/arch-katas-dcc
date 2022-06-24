@@ -8,14 +8,14 @@
 
 [004 Choosing the right NoSQL DB](adr-choosing-nosql-db.md)
 
-[005 Deployment methods - Containers Vs serverless](adr-deployment-method.md)
+[005 Deployment methods - Containers Vs Serverless](adr-deployment-method.md)
 
-[006 Document storage system](adr-external-document-storage.md)
+[006 Upload to 3rd party cloud storage directly from frontend](adr-upload-directly-to-document-storage.md)
 
 [007 Identity Provider (IdP)](adr-idp.md)
 
 [008 Choosing Message queue vs Event stream](adr-queue-stream.md)
 
-[009 Cloud Provider](cloud-providers.md)
+[009 Cloud Provider](adr-cloud-providers.md)
 
-[010 Operational Data Storage](operational-data-storage.md)
+[010 Operational Data Storage](adr-operational-data-storage.md)

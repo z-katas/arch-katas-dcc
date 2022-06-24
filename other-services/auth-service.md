@@ -32,4 +32,4 @@ Hybrid - Microservices and Event-Driven
 
 ### Relevant ADRs
 
-- [External IdP](../ADRs/external-idp.md)
+- [External IdP](../ADRs/adr-idp.md)
