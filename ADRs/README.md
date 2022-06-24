@@ -4,7 +4,7 @@
 
 [002 API Standard](adr-api-standard.md)
 
-[003 Green Field Projects - Build vs buy](adr-build-vs-buy.md)
+[003 Green Field Projects - Build vs Buy](adr-build-vs-buy.md)
 
 [004 Backend for frontend (BFF) with Graphql](adr-bff.md)
 

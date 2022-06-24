@@ -1,7 +1,12 @@
 # Spotlight Platform
 
+## Final Presentation
+![Video](../other-artifacts/spotlight-platform-presentation.mp4)
+
+https://prezi.com/v/view/QLsX6RaSORYOurrrfhnL/
+
 ## Table of Contents
-  * [About the team](#about-the-team)
+  * [About Team PegasuZ](#about-the-team)
   * [Glossary](#glossary)
   * [Prelude](#prelude)
   * [Non-functional requirements](#non-functional-requirements)
@@ -23,7 +28,7 @@
   * [Resources](#resources)
 
 <a name="about-the-team"></a>
-## About the team
+## About Team PegasuZ
 
 We are a passionate group of software engineers & product managers from an innovation as a service organization [Zemoso](https://www.zemosolabs.com/).
 
@@ -32,6 +37,10 @@ We are a passionate group of software engineers & product managers from an innov
 * [Ashish Kumar Das](https://www.linkedin.com/in/das-ashish/) 
 * [Sai Venkatesh Vemuri](https://www.linkedin.com/in/saivenkateshvemuri/) 
 * [Vasanth Kumar](https://www.linkedin.com/in/vasanth-kumar-22b9a4109/) 
+
+The name PegasuZ is a combination of the words "Pegasus" (which reflects progression) and "Zemoso" (since the team members are from Zemoso).
+
+So, `PegasuZ = [Pegasu]s + [Z]emoso`
 
 <a name="glossary"></a>
 ## Glossary
@@ -42,7 +51,7 @@ We are a passionate group of software engineers & product managers from an innov
 * UI - User Interface
 * UX - User Experience
 * IA - [Information Architecture](https://en.wikipedia.org/wiki/Information_architecture)
-* The team - Pegasuz team
+
 
 <a name="prelude"></a>
 ## Prelude
