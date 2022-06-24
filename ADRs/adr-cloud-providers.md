@@ -1,10 +1,8 @@
-# Title
-
-Cloud Provider
+# Cloud Provider
+Date: 2022-06-23
 
 ## Status
-
-Proposed
+Accepted
 
 ## Context
 

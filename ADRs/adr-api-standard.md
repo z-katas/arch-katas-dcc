@@ -1,10 +1,8 @@
-# Title
-
-API Standard
+# API Standard
+Date: 2022-06-23
 
 ## Status
-
-Proposed
+Accepted
 
 ## Context
 

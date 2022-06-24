@@ -1,8 +1,7 @@
-# Title
-Choosing Message queue vs Event stream
+# Choosing Message queue vs Event stream
 
 ## Status
-proposed 
+Accepted 
 
 ## Context
 Spotlight platform being an event driven system, queue/stream becomes a vital component of the architecture. Platform would need a long term reliable solution to scale for its use cases and build an event sourcing system.

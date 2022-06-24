@@ -1,10 +1,8 @@
-# Title
-
-Choosing the right NoSQL DB
+# Choosing the right NoSQL DB
+Date: 2022-06-23
 
 ## Status
-
-proposed
+Accepted
 
 ## Context
 
