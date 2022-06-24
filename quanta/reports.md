@@ -1,4 +1,4 @@
-## Reports Service
+## Reports and Analytics Quantum
 
 ![Image](../diagrams/quanta/Reports-quanta.jpg)
 
@@ -28,5 +28,4 @@ Hybrid - Event-driven (for processing periodic reports) + Microservices
 ![Image](../images/report-quantum-arch-characteristics.jpg)
 
 ### Relevant ADRs
-
-NA
+- [Build vs buy](../ADRs/adr-build-vs-buy.md)

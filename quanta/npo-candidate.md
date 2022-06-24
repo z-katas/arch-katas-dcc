@@ -25,8 +25,11 @@
 
 #### Top 3
 * **Feasibility (cost & time, in MVP)** - Since it is a green field project and quick market validation of the idea is paramount. Also, initial funding may be hard to come by.
+
+* **Extensibility (Evolvability)** - Since it is a green field project and there is ambiguity at the beginning, the architecture should be flexible to introduce new features or change existing ones.
+  
 * **Scalability** - The components in this quantum form the core operational aspect of the platform and must be scalable to accommodate the capacity planned for the system.
-* **Data integrity** - Tracking candidate progress is a hard requirement and the operational data captured by the components in this quantum used by the system for analytics and reports. So, accuracy becomes important.
+
 * **Availability (Post MVP)**  - The components in this quantum form the core operational aspect of the platform and must be available in multiple zones across USA.
 
 #### Other Driving Characteristics
@@ -37,9 +40,12 @@
 
 * **Recoverability** - The operational data captured by the components in this quantum used by the system for analytics and reports. So, it must be recoverable in case of disasters.
 
+* **Data integrity** - Tracking candidate progress is a hard requirement and the operational data captured by the components in this quantum used by the system for analytics and reports. So, accuracy becomes important.
+
 ### Architectural Style
-![]
-Hybrid - Event Driven and Microservices
+![Image](../images/np-candidate-quantum-style-worksheet.jpg)
+* MVP - Modular monolith (see [ADR - NP Candidate Arch style MVP](../ADRs/adr-arch-style-np-candidate-mvp.md))
+* Long-Term - Hybrid - Microservices and Event-Driven
 
 ### Trade-offs - Mitigation strategies
 * Event driven + microservices is a costly architecture. Setting up the infrastructure (CI/CD pipelines, continuous delivery, aggregated logging and monitoring, etc.) becomes really important. 
@@ -47,8 +53,19 @@ Hybrid - Event Driven and Microservices
 * Data is not consistent in an event driven system. It would be eventually consistent. 
   * Mitigation - This trade-off may be acceptable as the system is not dealing with mission critical information (such as affecting human life / money). 
 * Having a microservices architecture may reduce the performance and reliability of the services due to network hops.  
-  * Having an event-driven system internally with a reliable message queue would increase the reliability and performance of the system. 
+  * Mitigation - Having an event-driven system internally with a reliable message queue would increase the reliability and performance of the system. 
 
+
+### Call Flow diagrams
+
+#### Course enrollment for a course call flow
+![Image](../diagrams/call-flows/call-flow-course-enrollment.jpg)
+
+### Post notification call flow
+![Image](../diagrams/call-flows/call-flow-post-notification.jpg)
+
+### NPO user updating an excel sheet to update candidate assignment progress call flow
+![Image](../diagrams/call-flows/call-flow-candidate-assignment-progress.jpg)
 
 ### Relevant ADRs
 
