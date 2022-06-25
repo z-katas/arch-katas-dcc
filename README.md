@@ -33,15 +33,18 @@
 
 We are a passionate group of software engineers & product managers from an innovation as a service organization [Zemoso](https://www.zemosolabs.com/).
 
-* [Pranava Shashank P](https://www.linkedin.com/in/pranavashashank/) 
+* [Pranava Shashank P](https://www.linkedin.com/in/pranavashashank/) (Part of TeamZ which got an honorable mention in Architectural Katas April 2021 - [Repo](https://github.com/z-katas/sysops-squad))
 * [Naveen Chevuru](https://www.linkedin.com/in/naveenchevuru/)
 * [Ashish Kumar Das](https://www.linkedin.com/in/das-ashish/) 
 * [Sai Venkatesh Vemuri](https://www.linkedin.com/in/saivenkateshvemuri/) 
 * [Vasanth Kumar](https://www.linkedin.com/in/vasanth-kumar-22b9a4109/) 
 
-The name PegasuZ is a combination of the words "Pegasus" (which reflects progression) and "Zemoso" (since the team members are from Zemoso).
+`PegasuZ = [Pegasu]s + [Z]emoso`
 
-So, `PegasuZ = [Pegasu]s + [Z]emoso`
+The name PegasuZ is a combination of the words "Pegasus" (which reflects progression) and "Zemoso" (since the team members are from Zemoso). 
+
+We felt that the Spotlight platform would enable Candidates to progress in their career and hence we went with the mythical creature, "Pegasus".
+
 
 <a name="glossary"></a>
 ## Glossary
