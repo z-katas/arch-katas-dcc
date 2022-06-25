@@ -21,6 +21,13 @@ Spotlight platform being an event driven system, queue/stream becomes a vital co
 | Cost | low        | high | 
 Maintenance overhead | high | less|
 
+
 ## Decision
 **Event stream**
 considering use cases of spotlight platform with use cases of event to be delivered to multiple services (one such example is event candidate_ assignment_updated would be subscribed by candidate service and store the event for analytics ) which would not be offered by a message queue. 
+
+## Trade-offs
+* Cost - Streams are costly compared to queues, however given the advantages of management and reliability it is something that can be lived with.
+
+## References
+http://docs.eventide-project.org/core-concepts/streams/streams-vs-queues.html
