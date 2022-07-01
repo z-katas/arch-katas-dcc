@@ -2,7 +2,7 @@
 
 ![Image](../diagrams/quanta/meeting-quanta.jpg)
 
-Engagements are a key part of the Spotlight platform and meetings are a way to engage with the community. However, Building a reliable calendar service within the platform would take time and is not the core value proposition. (See [ADR](../ADRs/adr-build-vs-buy.md)). Recommended to use a 3rd party calendar service.
+Engagements are a key part of the Spotlight platform and meetings are a way to engage with the community. However, Building a reliable calendar service within the platform would take time and is not the core value proposition. (See [ADR](../ADRs/003.adr-build-vs-buy.md)). Recommended to use a 3rd party calendar service.
 
 ### Responsibilities
 
@@ -39,4 +39,4 @@ Microservices
 
 ### Relevant ADRs
 
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)

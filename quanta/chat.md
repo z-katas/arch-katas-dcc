@@ -6,7 +6,7 @@
 
 Having in-app chat support on the platform is a great way to engage with the community. Also, a candidate doesn't have to leave the app to engage with the mentors (say, over email).
 
-However, Building a reliable chat service within the platform would take time and is not the core value proposition. (See [ADR](../ADRs/adr-build-vs-buy.md)). Recommended to use a 3rd party calendar service.
+However, Building a reliable chat service within the platform would take time and is not the core value proposition. (See [ADR](../ADRs/003.adr-build-vs-buy.md)). Recommended to use a 3rd party calendar service.
 
 ### Responsibilities
 
@@ -41,4 +41,4 @@ Microservices
 
 ### Relevant ADRs
 
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)

@@ -31,4 +31,4 @@ Microservices
 
 ### Relevant ADRs
 
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)

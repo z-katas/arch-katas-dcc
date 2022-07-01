@@ -29,5 +29,5 @@ Microservices
 
 ### Relevant ADRs
 
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
-- [Data route to storage](../ADRs/adr-upload-directly-to-document-storage.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)
+- [Data route to storage](../ADRs/008.adr-upload-directly-to-document-storage.md)
