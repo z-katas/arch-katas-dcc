@@ -44,7 +44,7 @@
 
 ### Architectural Style
 ![Image](../images/np-candidate-quantum-style-worksheet.jpg)
-* MVP - Modular monolith (see [ADR - NP Candidate Arch style MVP](../ADRs/adr-arch-style-np-candidate-mvp.md))
+* MVP - Modular monolith (see [ADR - NP Candidate Arch style MVP](../ADRs/007.adr-arch-style-np-candidate-mvp.md))
 * Long-Term - Hybrid - Microservices and Event-Driven
 
 ### Trade-offs - Mitigation strategies
@@ -69,5 +69,5 @@
 
 ### Relevant ADRs
 
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
-- [Identity Provider](../ADRs/adr-idp.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)
+- [Identity Provider](../ADRs/009.adr-idp.md)

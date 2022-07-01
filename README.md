@@ -1,5 +1,10 @@
 # Spotlight Platform
 
+## Update
+Thank you judges for the feedback and the entire Oreily team for the event. It was a great learning experience competing with so many great teams. 
+<img src="./images/badge.png" width="150" height="150"/> **1st Place Winners of the O'Reilly Architecture Katas May-June 2022**
+
+
 ## Final Presentation
 ![Video](./other-artifacts/spotlight-platform-team-pegasuz.mp4)
 
@@ -174,13 +179,11 @@ Quanta identification helps in defining different parts of the platform and the 
 <a name="logical-view"></a>
 ### Logical View
 ![Image](./diagrams/logical-arch/spotlight-logical-architecture.jpg)
-[View as pdf](./diagrams/logical-arch/spotlight-logical-architecture.pdf)
+
 
 <a name="component-view"></a>
 ### Physical View
 ![Image](./diagrams/component/spotlight-component-diagram.jpg)
-
-[View as pdf](./diagrams/component/spotlight-component-diagram.pdf)
 
 [For better navigation on the content, use this miro frame](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764528112682338&cot=14)
 

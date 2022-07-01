@@ -28,4 +28,4 @@ Hybrid - Event-driven (for processing periodic reports) + Microservices
 ![Image](../images/report-quantum-arch-characteristics.jpg)
 
 ### Relevant ADRs
-- [Build vs buy](../ADRs/adr-build-vs-buy.md)
+- [Build vs buy](../ADRs/003.adr-build-vs-buy.md)

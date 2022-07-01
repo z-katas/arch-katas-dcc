@@ -19,6 +19,6 @@ This service handles all the frontend client interactions with the platform serv
 
 
 ### Relevant ADRs
-* [API standard](../ADRs/adr-api-standard.md)
-* [Backend for frontend](../ADRs/adr-bff.md)
+* [API standard](../ADRs/002.adr-api-standard.md)
+* [Backend for frontend](../ADRs/004.adr-bff.md)
 
