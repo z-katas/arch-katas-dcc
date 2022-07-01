@@ -6,7 +6,10 @@ Thank you judges for the feedback and the entire Oreily team for the event. It w
 
 
 ## Final Presentation
-![Video](./other-artifacts/spotlight-platform-team-pegasuz.mp4)
+[![](./images/presentation-thumbnail.png)](https://www.loom.com/share/bd6aaab2875540f68924baab38dabfbd)
+
+[Loom Link](https://www.loom.com/share/bd6aaab2875540f68924baab38dabfbd)
+
 
 [Prezi Link](https://prezi.com/v/view/QLsX6RaSORYOurrrfhnL/)
 
