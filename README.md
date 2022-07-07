@@ -1,10 +1,10 @@
-# O'reilly Architectural Katas - May 2022 - Spotlight Platform
+# O'reilly Architectural Katas - Spring 2022 - Spotlight Platform
 
 ## Update
 Thank you judges for the valuable feedback and the entire O'reilly team for organizing the event. It was a great learning experience just to be part of the event and looking at the perspectives of all the participating teams. 
 
 
-<img src="./images/badge.png" class="center"/> **Winners (First Place) - O'Reilly Architecture Katas May-June 2022**
+<img src="./images/badge.png" class="center"/> **Winners (First Place) - O'Reilly Architecture Katas Spring 2022**
 
 
 ## Final Presentation
