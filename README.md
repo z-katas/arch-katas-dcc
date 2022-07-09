@@ -34,7 +34,6 @@ Thank you judges for the valuable feedback and the entire O'reilly team for orga
     * [Logical View](#logical-view)
     * [Component View](#component-view)
   * [Platform Road map](#platform-roadmap)
-  * [Call Flow diagrams](#call-flow-diagrams)
   * [Engineering Practices](#engineering-practices)
   * [Resources](#resources)
 
@@ -193,7 +192,7 @@ Quanta identification helps in defining different parts of the platform and the 
 [For better navigation on the content, use this miro frame](https://miro.com/app/board/uXjVOv-nlBo=/?moveToWidget=3458764528112682338&cot=14)
 
 <a name="platform-roadmap"></a>
-## Platform Road map
+## Platform Roadmap
 
 ### MVP
 The MVP is envisioned to bring out the unique value proposition of the platform and solve the key business problem / pain points. It should be sufficient for the business to get market feedback and pivot, if needed.
