@@ -237,5 +237,5 @@ Areas to be addressed:
 
 <a name="resources"></a>
 ## Resources
-* [Design Thinking](https://miro.com/app/board/uXjVOv-nLZE=/)
-* [Arch Katas Artifacts](https://miro.com/app/board/uXjVOv-nlBo=/)
+* [Design Thinking](https://miro.com/app/board/uXjVOv-nLZE=/?share_link_id=379517243423)
+* [Arch Katas Artifacts](https://miro.com/app/board/uXjVOv-nlBo=/?share_link_id=836537483968)
